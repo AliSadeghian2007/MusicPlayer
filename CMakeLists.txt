@@ -11,6 +11,12 @@ qt_add_executable(MusicPlayer
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    song.h song.cpp
+    album.h album.cpp
+    playlist.h playlist.cpp
+    user.h user.cpp
+    artist.h artist.cpp
+    listener.h listener.cpp
 )
 
 target_link_libraries(MusicPlayer

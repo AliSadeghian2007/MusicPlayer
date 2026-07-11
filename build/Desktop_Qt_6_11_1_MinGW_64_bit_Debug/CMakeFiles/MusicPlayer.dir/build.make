@@ -113,11 +113,107 @@ CMakeFiles/MusicPlayer.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MusicPlayer.dir/mainwindow.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Project\C++\Project\MusicPlayer\mainwindow.cpp -o CMakeFiles\MusicPlayer.dir\mainwindow.cpp.s
 
+CMakeFiles/MusicPlayer.dir/song.cpp.obj: CMakeFiles/MusicPlayer.dir/flags.make
+CMakeFiles/MusicPlayer.dir/song.cpp.obj: CMakeFiles/MusicPlayer.dir/includes_CXX.rsp
+CMakeFiles/MusicPlayer.dir/song.cpp.obj: F:/Project/C++/Project/MusicPlayer/song.cpp
+CMakeFiles/MusicPlayer.dir/song.cpp.obj: CMakeFiles/MusicPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MusicPlayer.dir/song.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MusicPlayer.dir/song.cpp.obj -MF CMakeFiles\MusicPlayer.dir\song.cpp.obj.d -o CMakeFiles\MusicPlayer.dir\song.cpp.obj -c F:\Project\C++\Project\MusicPlayer\song.cpp
+
+CMakeFiles/MusicPlayer.dir/song.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MusicPlayer.dir/song.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Project\C++\Project\MusicPlayer\song.cpp > CMakeFiles\MusicPlayer.dir\song.cpp.i
+
+CMakeFiles/MusicPlayer.dir/song.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MusicPlayer.dir/song.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Project\C++\Project\MusicPlayer\song.cpp -o CMakeFiles\MusicPlayer.dir\song.cpp.s
+
+CMakeFiles/MusicPlayer.dir/album.cpp.obj: CMakeFiles/MusicPlayer.dir/flags.make
+CMakeFiles/MusicPlayer.dir/album.cpp.obj: CMakeFiles/MusicPlayer.dir/includes_CXX.rsp
+CMakeFiles/MusicPlayer.dir/album.cpp.obj: F:/Project/C++/Project/MusicPlayer/album.cpp
+CMakeFiles/MusicPlayer.dir/album.cpp.obj: CMakeFiles/MusicPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MusicPlayer.dir/album.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MusicPlayer.dir/album.cpp.obj -MF CMakeFiles\MusicPlayer.dir\album.cpp.obj.d -o CMakeFiles\MusicPlayer.dir\album.cpp.obj -c F:\Project\C++\Project\MusicPlayer\album.cpp
+
+CMakeFiles/MusicPlayer.dir/album.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MusicPlayer.dir/album.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Project\C++\Project\MusicPlayer\album.cpp > CMakeFiles\MusicPlayer.dir\album.cpp.i
+
+CMakeFiles/MusicPlayer.dir/album.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MusicPlayer.dir/album.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Project\C++\Project\MusicPlayer\album.cpp -o CMakeFiles\MusicPlayer.dir\album.cpp.s
+
+CMakeFiles/MusicPlayer.dir/playlist.cpp.obj: CMakeFiles/MusicPlayer.dir/flags.make
+CMakeFiles/MusicPlayer.dir/playlist.cpp.obj: CMakeFiles/MusicPlayer.dir/includes_CXX.rsp
+CMakeFiles/MusicPlayer.dir/playlist.cpp.obj: F:/Project/C++/Project/MusicPlayer/playlist.cpp
+CMakeFiles/MusicPlayer.dir/playlist.cpp.obj: CMakeFiles/MusicPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MusicPlayer.dir/playlist.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MusicPlayer.dir/playlist.cpp.obj -MF CMakeFiles\MusicPlayer.dir\playlist.cpp.obj.d -o CMakeFiles\MusicPlayer.dir\playlist.cpp.obj -c F:\Project\C++\Project\MusicPlayer\playlist.cpp
+
+CMakeFiles/MusicPlayer.dir/playlist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MusicPlayer.dir/playlist.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Project\C++\Project\MusicPlayer\playlist.cpp > CMakeFiles\MusicPlayer.dir\playlist.cpp.i
+
+CMakeFiles/MusicPlayer.dir/playlist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MusicPlayer.dir/playlist.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Project\C++\Project\MusicPlayer\playlist.cpp -o CMakeFiles\MusicPlayer.dir\playlist.cpp.s
+
+CMakeFiles/MusicPlayer.dir/user.cpp.obj: CMakeFiles/MusicPlayer.dir/flags.make
+CMakeFiles/MusicPlayer.dir/user.cpp.obj: CMakeFiles/MusicPlayer.dir/includes_CXX.rsp
+CMakeFiles/MusicPlayer.dir/user.cpp.obj: F:/Project/C++/Project/MusicPlayer/user.cpp
+CMakeFiles/MusicPlayer.dir/user.cpp.obj: CMakeFiles/MusicPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MusicPlayer.dir/user.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MusicPlayer.dir/user.cpp.obj -MF CMakeFiles\MusicPlayer.dir\user.cpp.obj.d -o CMakeFiles\MusicPlayer.dir\user.cpp.obj -c F:\Project\C++\Project\MusicPlayer\user.cpp
+
+CMakeFiles/MusicPlayer.dir/user.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MusicPlayer.dir/user.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Project\C++\Project\MusicPlayer\user.cpp > CMakeFiles\MusicPlayer.dir\user.cpp.i
+
+CMakeFiles/MusicPlayer.dir/user.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MusicPlayer.dir/user.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Project\C++\Project\MusicPlayer\user.cpp -o CMakeFiles\MusicPlayer.dir\user.cpp.s
+
+CMakeFiles/MusicPlayer.dir/artist.cpp.obj: CMakeFiles/MusicPlayer.dir/flags.make
+CMakeFiles/MusicPlayer.dir/artist.cpp.obj: CMakeFiles/MusicPlayer.dir/includes_CXX.rsp
+CMakeFiles/MusicPlayer.dir/artist.cpp.obj: F:/Project/C++/Project/MusicPlayer/artist.cpp
+CMakeFiles/MusicPlayer.dir/artist.cpp.obj: CMakeFiles/MusicPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MusicPlayer.dir/artist.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MusicPlayer.dir/artist.cpp.obj -MF CMakeFiles\MusicPlayer.dir\artist.cpp.obj.d -o CMakeFiles\MusicPlayer.dir\artist.cpp.obj -c F:\Project\C++\Project\MusicPlayer\artist.cpp
+
+CMakeFiles/MusicPlayer.dir/artist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MusicPlayer.dir/artist.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Project\C++\Project\MusicPlayer\artist.cpp > CMakeFiles\MusicPlayer.dir\artist.cpp.i
+
+CMakeFiles/MusicPlayer.dir/artist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MusicPlayer.dir/artist.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Project\C++\Project\MusicPlayer\artist.cpp -o CMakeFiles\MusicPlayer.dir\artist.cpp.s
+
+CMakeFiles/MusicPlayer.dir/listener.cpp.obj: CMakeFiles/MusicPlayer.dir/flags.make
+CMakeFiles/MusicPlayer.dir/listener.cpp.obj: CMakeFiles/MusicPlayer.dir/includes_CXX.rsp
+CMakeFiles/MusicPlayer.dir/listener.cpp.obj: F:/Project/C++/Project/MusicPlayer/listener.cpp
+CMakeFiles/MusicPlayer.dir/listener.cpp.obj: CMakeFiles/MusicPlayer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MusicPlayer.dir/listener.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MusicPlayer.dir/listener.cpp.obj -MF CMakeFiles\MusicPlayer.dir\listener.cpp.obj.d -o CMakeFiles\MusicPlayer.dir\listener.cpp.obj -c F:\Project\C++\Project\MusicPlayer\listener.cpp
+
+CMakeFiles/MusicPlayer.dir/listener.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MusicPlayer.dir/listener.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Project\C++\Project\MusicPlayer\listener.cpp > CMakeFiles\MusicPlayer.dir\listener.cpp.i
+
+CMakeFiles/MusicPlayer.dir/listener.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MusicPlayer.dir/listener.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Project\C++\Project\MusicPlayer\listener.cpp -o CMakeFiles\MusicPlayer.dir\listener.cpp.s
+
 # Object files for target MusicPlayer
 MusicPlayer_OBJECTS = \
 "CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/MusicPlayer.dir/main.cpp.obj" \
-"CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj"
+"CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj" \
+"CMakeFiles/MusicPlayer.dir/song.cpp.obj" \
+"CMakeFiles/MusicPlayer.dir/album.cpp.obj" \
+"CMakeFiles/MusicPlayer.dir/playlist.cpp.obj" \
+"CMakeFiles/MusicPlayer.dir/user.cpp.obj" \
+"CMakeFiles/MusicPlayer.dir/artist.cpp.obj" \
+"CMakeFiles/MusicPlayer.dir/listener.cpp.obj"
 
 # External object files for target MusicPlayer
 MusicPlayer_EXTERNAL_OBJECTS =
@@ -125,6 +221,12 @@ MusicPlayer_EXTERNAL_OBJECTS =
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/main.cpp.obj
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj
+MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/song.cpp.obj
+MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/album.cpp.obj
+MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/playlist.cpp.obj
+MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/user.cpp.obj
+MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/artist.cpp.obj
+MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/listener.cpp.obj
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/build.make
 MusicPlayer.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a
 MusicPlayer.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Gui.a
@@ -134,7 +236,7 @@ MusicPlayer.exe: MusicPlayer.exe.manifest
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/linkLibs.rsp
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/objects1.rsp
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MusicPlayer.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable MusicPlayer.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MusicPlayer.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

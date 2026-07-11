@@ -223,6 +223,78 @@ MusicPlayer_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.s
 .PHONY : MusicPlayer_autogen/mocs_compilation.cpp.s
 
+album.obj: album.cpp.obj
+.PHONY : album.obj
+
+# target to build an object file
+album.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/album.cpp.obj
+.PHONY : album.cpp.obj
+
+album.i: album.cpp.i
+.PHONY : album.i
+
+# target to preprocess a source file
+album.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/album.cpp.i
+.PHONY : album.cpp.i
+
+album.s: album.cpp.s
+.PHONY : album.s
+
+# target to generate assembly for a file
+album.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/album.cpp.s
+.PHONY : album.cpp.s
+
+artist.obj: artist.cpp.obj
+.PHONY : artist.obj
+
+# target to build an object file
+artist.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artist.cpp.obj
+.PHONY : artist.cpp.obj
+
+artist.i: artist.cpp.i
+.PHONY : artist.i
+
+# target to preprocess a source file
+artist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artist.cpp.i
+.PHONY : artist.cpp.i
+
+artist.s: artist.cpp.s
+.PHONY : artist.s
+
+# target to generate assembly for a file
+artist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artist.cpp.s
+.PHONY : artist.cpp.s
+
+listener.obj: listener.cpp.obj
+.PHONY : listener.obj
+
+# target to build an object file
+listener.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listener.cpp.obj
+.PHONY : listener.cpp.obj
+
+listener.i: listener.cpp.i
+.PHONY : listener.i
+
+# target to preprocess a source file
+listener.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listener.cpp.i
+.PHONY : listener.cpp.i
+
+listener.s: listener.cpp.s
+.PHONY : listener.s
+
+# target to generate assembly for a file
+listener.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listener.cpp.s
+.PHONY : listener.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -271,6 +343,78 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+playlist.obj: playlist.cpp.obj
+.PHONY : playlist.obj
+
+# target to build an object file
+playlist.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/playlist.cpp.obj
+.PHONY : playlist.cpp.obj
+
+playlist.i: playlist.cpp.i
+.PHONY : playlist.i
+
+# target to preprocess a source file
+playlist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/playlist.cpp.i
+.PHONY : playlist.cpp.i
+
+playlist.s: playlist.cpp.s
+.PHONY : playlist.s
+
+# target to generate assembly for a file
+playlist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/playlist.cpp.s
+.PHONY : playlist.cpp.s
+
+song.obj: song.cpp.obj
+.PHONY : song.obj
+
+# target to build an object file
+song.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/song.cpp.obj
+.PHONY : song.cpp.obj
+
+song.i: song.cpp.i
+.PHONY : song.i
+
+# target to preprocess a source file
+song.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/song.cpp.i
+.PHONY : song.cpp.i
+
+song.s: song.cpp.s
+.PHONY : song.s
+
+# target to generate assembly for a file
+song.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/song.cpp.s
+.PHONY : song.cpp.s
+
+user.obj: user.cpp.obj
+.PHONY : user.obj
+
+# target to build an object file
+user.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/user.cpp.obj
+.PHONY : user.cpp.obj
+
+user.i: user.cpp.i
+.PHONY : user.i
+
+# target to preprocess a source file
+user.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/user.cpp.i
+.PHONY : user.cpp.i
+
+user.s: user.cpp.s
+.PHONY : user.s
+
+# target to generate assembly for a file
+user.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/user.cpp.s
+.PHONY : user.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -289,12 +433,30 @@ help:
 	@echo ... MusicPlayer_autogen/mocs_compilation.obj
 	@echo ... MusicPlayer_autogen/mocs_compilation.i
 	@echo ... MusicPlayer_autogen/mocs_compilation.s
+	@echo ... album.obj
+	@echo ... album.i
+	@echo ... album.s
+	@echo ... artist.obj
+	@echo ... artist.i
+	@echo ... artist.s
+	@echo ... listener.obj
+	@echo ... listener.i
+	@echo ... listener.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... playlist.obj
+	@echo ... playlist.i
+	@echo ... playlist.s
+	@echo ... song.obj
+	@echo ... song.i
+	@echo ... song.s
+	@echo ... user.obj
+	@echo ... user.i
+	@echo ... user.s
 .PHONY : help
 
 
