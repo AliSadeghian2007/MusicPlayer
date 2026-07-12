@@ -1,3 +1,6 @@
 #include "listener.h"
 
-Listener::Listener() {}
+Listener::Listener()
+{
+
+}

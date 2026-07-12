@@ -223,6 +223,30 @@ MusicPlayer_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.s
 .PHONY : MusicPlayer_autogen/mocs_compilation.cpp.s
 
+abstractrepository.obj: abstractrepository.cpp.obj
+.PHONY : abstractrepository.obj
+
+# target to build an object file
+abstractrepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/abstractrepository.cpp.obj
+.PHONY : abstractrepository.cpp.obj
+
+abstractrepository.i: abstractrepository.cpp.i
+.PHONY : abstractrepository.i
+
+# target to preprocess a source file
+abstractrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/abstractrepository.cpp.i
+.PHONY : abstractrepository.cpp.i
+
+abstractrepository.s: abstractrepository.cpp.s
+.PHONY : abstractrepository.s
+
+# target to generate assembly for a file
+abstractrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/abstractrepository.cpp.s
+.PHONY : abstractrepository.cpp.s
+
 album.obj: album.cpp.obj
 .PHONY : album.obj
 
@@ -433,6 +457,9 @@ help:
 	@echo ... MusicPlayer_autogen/mocs_compilation.obj
 	@echo ... MusicPlayer_autogen/mocs_compilation.i
 	@echo ... MusicPlayer_autogen/mocs_compilation.s
+	@echo ... abstractrepository.obj
+	@echo ... abstractrepository.i
+	@echo ... abstractrepository.s
 	@echo ... album.obj
 	@echo ... album.i
 	@echo ... album.s

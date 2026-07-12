@@ -378,6 +378,12 @@
 	"HEADERS" : 
 	[
 		[
+			"F:/Project/C++/Project/MusicPlayer/abstractrepository.h",
+			"MU",
+			"EWIEGA46WW/moc_abstractrepository.cpp",
+			null
+		],
+		[
 			"F:/Project/C++/Project/MusicPlayer/album.h",
 			"MU",
 			"EWIEGA46WW/moc_album.cpp",
@@ -491,6 +497,11 @@
 	"SETTINGS_FILE" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/MusicPlayer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"F:/Project/C++/Project/MusicPlayer/abstractrepository.cpp",
+			"MU",
+			null
+		],
 		[ "F:/Project/C++/Project/MusicPlayer/album.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/artist.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/listener.cpp", "MU", null ],

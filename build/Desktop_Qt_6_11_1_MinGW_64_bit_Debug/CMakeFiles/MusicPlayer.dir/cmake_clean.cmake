@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/MusicPlayer.dir/abstractrepository.cpp.obj"
+  "CMakeFiles/MusicPlayer.dir/abstractrepository.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/album.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/album.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/artist.cpp.obj"
