@@ -384,6 +384,12 @@
 			null
 		],
 		[
+			"F:/Project/C++/Project/MusicPlayer/accountrepository.h",
+			"MU",
+			"EWIEGA46WW/moc_accountrepository.cpp",
+			null
+		],
+		[
 			"F:/Project/C++/Project/MusicPlayer/album.h",
 			"MU",
 			"EWIEGA46WW/moc_album.cpp",
@@ -499,6 +505,11 @@
 	[
 		[
 			"F:/Project/C++/Project/MusicPlayer/abstractrepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Project/C++/Project/MusicPlayer/accountrepository.cpp",
 			"MU",
 			null
 		],

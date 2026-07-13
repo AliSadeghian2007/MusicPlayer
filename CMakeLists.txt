@@ -18,6 +18,7 @@ qt_add_executable(MusicPlayer
     artist.h artist.cpp
     listener.h listener.cpp
     abstractrepository.h abstractrepository.cpp
+    accountrepository.h accountrepository.cpp
 )
 
 target_link_libraries(MusicPlayer

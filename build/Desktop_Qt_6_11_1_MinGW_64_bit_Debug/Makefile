@@ -247,6 +247,30 @@ abstractrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/abstractrepository.cpp.s
 .PHONY : abstractrepository.cpp.s
 
+accountrepository.obj: accountrepository.cpp.obj
+.PHONY : accountrepository.obj
+
+# target to build an object file
+accountrepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/accountrepository.cpp.obj
+.PHONY : accountrepository.cpp.obj
+
+accountrepository.i: accountrepository.cpp.i
+.PHONY : accountrepository.i
+
+# target to preprocess a source file
+accountrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/accountrepository.cpp.i
+.PHONY : accountrepository.cpp.i
+
+accountrepository.s: accountrepository.cpp.s
+.PHONY : accountrepository.s
+
+# target to generate assembly for a file
+accountrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/accountrepository.cpp.s
+.PHONY : accountrepository.cpp.s
+
 album.obj: album.cpp.obj
 .PHONY : album.obj
 
@@ -460,6 +484,9 @@ help:
 	@echo ... abstractrepository.obj
 	@echo ... abstractrepository.i
 	@echo ... abstractrepository.s
+	@echo ... accountrepository.obj
+	@echo ... accountrepository.i
+	@echo ... accountrepository.s
 	@echo ... album.obj
 	@echo ... album.i
 	@echo ... album.s

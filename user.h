@@ -7,7 +7,10 @@ using namespace std;
 class User
 {
 public:
-    User();
+    virtual ~User()=default;
+    int getId();
+    string getUserName();
+
 protected:
     int id;
     string username;
