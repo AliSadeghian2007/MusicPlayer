@@ -2,23 +2,23 @@
 #define USER_H
 
 #include<string>
-using namespace std;
 
 class User
 {
 public:
+    User();
     virtual ~User()=default;
-    int getId();
-    string getUserName();
+    int getId(){return id;}
+    std::string getUserName(){return username;}
 
 protected:
     int id;
-    string username;
-    string password;
-    string fullName;
-    string biography;
-    string role;
-    string profilePhotoPath;
+    std::string username;
+    std::string password;
+    std::string fullName;
+    std::string biography;
+    std::string role;
+    std::string profilePhotoPath;
 };
 
 #endif // USER_H

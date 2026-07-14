@@ -343,6 +343,30 @@ listener.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listener.cpp.s
 .PHONY : listener.cpp.s
 
+listenrrepository.obj: listenrrepository.cpp.obj
+.PHONY : listenrrepository.obj
+
+# target to build an object file
+listenrrepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenrrepository.cpp.obj
+.PHONY : listenrrepository.cpp.obj
+
+listenrrepository.i: listenrrepository.cpp.i
+.PHONY : listenrrepository.i
+
+# target to preprocess a source file
+listenrrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenrrepository.cpp.i
+.PHONY : listenrrepository.cpp.i
+
+listenrrepository.s: listenrrepository.cpp.s
+.PHONY : listenrrepository.s
+
+# target to generate assembly for a file
+listenrrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenrrepository.cpp.s
+.PHONY : listenrrepository.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -415,6 +439,30 @@ playlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/playlist.cpp.s
 .PHONY : playlist.cpp.s
 
+playlistrepository.obj: playlistrepository.cpp.obj
+.PHONY : playlistrepository.obj
+
+# target to build an object file
+playlistrepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/playlistrepository.cpp.obj
+.PHONY : playlistrepository.cpp.obj
+
+playlistrepository.i: playlistrepository.cpp.i
+.PHONY : playlistrepository.i
+
+# target to preprocess a source file
+playlistrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/playlistrepository.cpp.i
+.PHONY : playlistrepository.cpp.i
+
+playlistrepository.s: playlistrepository.cpp.s
+.PHONY : playlistrepository.s
+
+# target to generate assembly for a file
+playlistrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/playlistrepository.cpp.s
+.PHONY : playlistrepository.cpp.s
+
 song.obj: song.cpp.obj
 .PHONY : song.obj
 
@@ -438,6 +486,30 @@ song.s: song.cpp.s
 song.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/song.cpp.s
 .PHONY : song.cpp.s
+
+songrepository.obj: songrepository.cpp.obj
+.PHONY : songrepository.obj
+
+# target to build an object file
+songrepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/songrepository.cpp.obj
+.PHONY : songrepository.cpp.obj
+
+songrepository.i: songrepository.cpp.i
+.PHONY : songrepository.i
+
+# target to preprocess a source file
+songrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/songrepository.cpp.i
+.PHONY : songrepository.cpp.i
+
+songrepository.s: songrepository.cpp.s
+.PHONY : songrepository.s
+
+# target to generate assembly for a file
+songrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/songrepository.cpp.s
+.PHONY : songrepository.cpp.s
 
 user.obj: user.cpp.obj
 .PHONY : user.obj
@@ -496,6 +568,9 @@ help:
 	@echo ... listener.obj
 	@echo ... listener.i
 	@echo ... listener.s
+	@echo ... listenrrepository.obj
+	@echo ... listenrrepository.i
+	@echo ... listenrrepository.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -505,9 +580,15 @@ help:
 	@echo ... playlist.obj
 	@echo ... playlist.i
 	@echo ... playlist.s
+	@echo ... playlistrepository.obj
+	@echo ... playlistrepository.i
+	@echo ... playlistrepository.s
 	@echo ... song.obj
 	@echo ... song.i
 	@echo ... song.s
+	@echo ... songrepository.obj
+	@echo ... songrepository.i
+	@echo ... songrepository.s
 	@echo ... user.obj
 	@echo ... user.i
 	@echo ... user.s

@@ -408,6 +408,12 @@
 			null
 		],
 		[
+			"F:/Project/C++/Project/MusicPlayer/listenrrepository.h",
+			"MU",
+			"EWIEGA46WW/moc_listenrrepository.cpp",
+			null
+		],
+		[
 			"F:/Project/C++/Project/MusicPlayer/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -420,9 +426,21 @@
 			null
 		],
 		[
+			"F:/Project/C++/Project/MusicPlayer/playlistrepository.h",
+			"MU",
+			"EWIEGA46WW/moc_playlistrepository.cpp",
+			null
+		],
+		[
 			"F:/Project/C++/Project/MusicPlayer/song.h",
 			"MU",
 			"EWIEGA46WW/moc_song.cpp",
+			null
+		],
+		[
+			"F:/Project/C++/Project/MusicPlayer/songrepository.h",
+			"MU",
+			"EWIEGA46WW/moc_songrepository.cpp",
 			null
 		],
 		[
@@ -516,10 +534,21 @@
 		[ "F:/Project/C++/Project/MusicPlayer/album.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/artist.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/listener.cpp", "MU", null ],
+		[
+			"F:/Project/C++/Project/MusicPlayer/listenrrepository.cpp",
+			"MU",
+			null
+		],
 		[ "F:/Project/C++/Project/MusicPlayer/main.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/mainwindow.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/playlist.cpp", "MU", null ],
+		[
+			"F:/Project/C++/Project/MusicPlayer/playlistrepository.cpp",
+			"MU",
+			null
+		],
 		[ "F:/Project/C++/Project/MusicPlayer/song.cpp", "MU", null ],
+		[ "F:/Project/C++/Project/MusicPlayer/songrepository.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/user.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

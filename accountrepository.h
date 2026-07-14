@@ -7,7 +7,7 @@
 #include <vector>
 class AccountRepository : public AbstractRepository<User>
 {
-private:
+protected:
     std::vector<std::unique_ptr<User>> users;
 public:
     AccountRepository();
@@ -16,6 +16,11 @@ public:
     bool save(std::unique_ptr<User> item) override;
     bool remove(int id) override;
     User* search (int id) const override;
+
+    std::vector<std::unique_ptr<User>>& getUsers()
+    {
+        return users;
+    }
 
 
     User* searchByUserName(const std::string& name)const;

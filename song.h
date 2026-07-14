@@ -8,6 +8,18 @@ class Song
 {
 public:
     Song();
+int get_Id()
+    {
+    return id;
+    }
+int getartistId()
+    {
+    return artistId;
+    }
+int getAlbumId()
+    {
+    return albumId;
+    }
 private:
     int id;
     string fileName;

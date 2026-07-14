@@ -1,7 +1,6 @@
 #ifndef ABSTRACTREPOSITORY_H
 #define ABSTRACTREPOSITORY_H
 #include <memory>
-#include<iostream>
 template<class T>
 class AbstractRepository
 {
