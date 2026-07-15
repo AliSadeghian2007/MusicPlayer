@@ -7,9 +7,22 @@ class User
 {
 public:
     User();
-    virtual ~User()=default;
-    int getId(){return id;}
-    std::string getUserName(){return username;}
+    User(int id, const std::string& username, const std::string& password,
+         const std::string& fullName, const std::string& biography,
+         const std::string& role, const std::string& profilePhotoPath);
+
+    virtual ~User() = default;
+
+    int getId() const { return id; }
+    std::string getUserName() const { return username; }
+
+    void setId(int id) { this->id = id; }
+    void setUserName(const std::string& username) { this->username = username; }
+    void setPassword(const std::string& password) { this->password = password; }
+    void setFullName(const std::string& fullName) { this->fullName = fullName; }
+    void setBiography(const std::string& biography) { this->biography = biography; }
+    void setRole(const std::string& role) { this->role = role; }
+    void setProfilePhotoPath(const std::string& profilePhotoPath) { this->profilePhotoPath = profilePhotoPath; }
 
 protected:
     int id;
