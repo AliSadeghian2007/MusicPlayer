@@ -1,16 +1,39 @@
 #ifndef ALBUM_H
 #define ALBUM_H
-#include<string>
-using namespace std;
+
+#include <string>
+
+
 class Album
 {
 public:
-    Album();
+    Album(int id, int artistId, const std::string& name, const std::string& coverPath);
+
+    int getId() const
+    {
+        return id;
+    }
+
+    int getArtistId() const
+    {
+        return artistId;
+    }
+
+    const std::string& getName() const
+    {
+        return name;
+    }
+
+    const std::string& getCoverPath() const
+    {
+        return coverPath;
+    }
+
 private:
-    string coverPath;
+    std::string coverPath;
     int artistId;
-    string name;
+    std::string name;
     int id;
 };
 
-#endif // ALBUM_H
+#endif

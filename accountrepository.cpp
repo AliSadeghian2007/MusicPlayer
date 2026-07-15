@@ -46,7 +46,7 @@ User* AccountRepository::search(int id) const
     return nullptr;
 }
 
-User* AccountRepository::searchByUserName(const string& name)const
+User* AccountRepository::searchByUserName(const std::string& name)const
 {
     for(int i=0;i<users.size();i++)
     {

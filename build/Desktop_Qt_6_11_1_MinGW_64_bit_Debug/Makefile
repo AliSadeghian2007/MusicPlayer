@@ -295,6 +295,30 @@ album.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/album.cpp.s
 .PHONY : album.cpp.s
 
+albumrepository.obj: albumrepository.cpp.obj
+.PHONY : albumrepository.obj
+
+# target to build an object file
+albumrepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/albumrepository.cpp.obj
+.PHONY : albumrepository.cpp.obj
+
+albumrepository.i: albumrepository.cpp.i
+.PHONY : albumrepository.i
+
+# target to preprocess a source file
+albumrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/albumrepository.cpp.i
+.PHONY : albumrepository.cpp.i
+
+albumrepository.s: albumrepository.cpp.s
+.PHONY : albumrepository.s
+
+# target to generate assembly for a file
+albumrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/albumrepository.cpp.s
+.PHONY : albumrepository.cpp.s
+
 artist.obj: artist.cpp.obj
 .PHONY : artist.obj
 
@@ -586,6 +610,9 @@ help:
 	@echo ... album.obj
 	@echo ... album.i
 	@echo ... album.s
+	@echo ... albumrepository.obj
+	@echo ... albumrepository.i
+	@echo ... albumrepository.s
 	@echo ... artist.obj
 	@echo ... artist.i
 	@echo ... artist.s
