@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MusicPlayer.dir/album.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/artist.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/artist.cpp.obj.d"
+  "CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj"
+  "CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/listener.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/listener.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/listenrrepository.cpp.obj"

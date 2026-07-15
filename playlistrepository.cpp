@@ -98,7 +98,7 @@ bool PlaylistRepository::removeSong(int playlistId,int songId)
 }
 
 
-std::vector<Playlist*> PlaylistRepository::playlists(int listenerId)
+std::vector<Playlist*> PlaylistRepository::playlists(int listenerId) const
 {
     std::vector<Playlist*>result;
     for(int i=0;i<playlistha.size();i++)

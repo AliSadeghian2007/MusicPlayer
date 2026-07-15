@@ -16,7 +16,7 @@ public:
 
     bool insertSong(int playlistId,int songId);
     bool removeSong(int playlistId,int songId);
-    std::vector<Playlist*> playlists(int listenerId);
+    std::vector<Playlist*> playlists(int listenerId)const;
 
 };
 

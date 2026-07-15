@@ -84,13 +84,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 32,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 26,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
@@ -425,18 +425,20 @@
 				18,
 				20,
 				22,
-				24
+				24,
+				26,
+				28
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "MusicPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "MusicPlayer_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "MusicPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "MusicPlayer::@6890427a1f51a3e7e1df",
@@ -547,8 +549,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				26,
-				27
+				30,
+				31
 			]
 		},
 		{
@@ -566,7 +568,9 @@
 				18,
 				20,
 				22,
-				24
+				24,
+				26,
+				28
 			]
 		},
 		{
@@ -583,7 +587,9 @@
 				17,
 				19,
 				21,
-				23
+				23,
+				25,
+				27
 			]
 		},
 		{
@@ -597,14 +603,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				25
+				29
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				28
+				32
 			]
 		}
 	],
@@ -747,6 +753,28 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "playlistrepository.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "listenrrepository.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "listenrrepository.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "artistrepository.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "artistrepository.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
