@@ -10,7 +10,7 @@ private:
 public:
     Listener();
     void setIdLikedSongs(int id);
-    std::vector<int> getIdLikedSong();
+    std::vector<int> getIdLikedSong() const;
     void deleteLikedSong(int i);
 };
 

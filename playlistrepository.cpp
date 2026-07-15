@@ -46,3 +46,68 @@ Playlist* PlaylistRepository::search(int id) const
     }
     return nullptr;
 }
+
+
+
+bool PlaylistRepository::insertSong(int playlistId,int songId)
+{
+    for (int i=0;i<playlistha.size();i++)
+    {
+        if (playlistha[i]->getId()==playlistId)
+        {
+            const std::vector<int>& a=playlistha[i]->getSongIds();
+            for (int j=0;j<a.size();j++)
+            {
+                if(songId==a[j])
+                {
+                    return false;
+                }
+            }
+            playlistha[i]->addSong(songId);
+            return true;
+        }
+    }
+    return false;
+
+
+
+}
+
+
+bool PlaylistRepository::removeSong(int playlistId,int songId)
+{
+    for (int i=0;i<playlistha.size();i++)
+    {
+        if (playlistha[i]->getId()==playlistId)
+        {
+            const std::vector<int>& a=playlistha[i]->getSongIds();
+            for (int j=0;j<a.size();j++)
+            {
+                if(songId==a[j])
+                {
+                    playlistha[i]->removeSong(songId);
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+    return false;
+
+
+}
+
+
+std::vector<Playlist*> PlaylistRepository::playlists(int listenerId)
+{
+    std::vector<Playlist*>result;
+    for(int i=0;i<playlistha.size();i++)
+    {
+        if(playlistha[i]->getListenerId()==listenerId)
+        {
+            result.push_back(playlistha[i].get());
+        }
+    }
+    return result;
+
+}
