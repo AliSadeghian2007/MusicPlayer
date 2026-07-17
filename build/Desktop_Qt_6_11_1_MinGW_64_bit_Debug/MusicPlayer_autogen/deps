@@ -612,6 +612,8 @@ MusicPlayer_autogen/timestamp: \
 	F:/Project/C++/Project/MusicPlayer/CMakeLists.txt \
 	F:/Project/C++/Project/MusicPlayer/abstractrepository.cpp \
 	F:/Project/C++/Project/MusicPlayer/abstractrepository.h \
+	F:/Project/C++/Project/MusicPlayer/accountmanager.cpp \
+	F:/Project/C++/Project/MusicPlayer/accountmanager.h \
 	F:/Project/C++/Project/MusicPlayer/accountrepository.cpp \
 	F:/Project/C++/Project/MusicPlayer/accountrepository.h \
 	F:/Project/C++/Project/MusicPlayer/album.cpp \

@@ -1,4 +1,4 @@
-#ifndef USER_H
+0#ifndef USER_H
 #define USER_H
 
 #include<string>
@@ -13,6 +13,7 @@ public:
 
     virtual ~User() = default;
 
+    std::string getPassword(){return password;}
     int getId() const { return id; }
     std::string getUserName() const { return username; }
 
