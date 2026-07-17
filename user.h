@@ -1,4 +1,4 @@
-0#ifndef USER_H
+#ifndef USER_H
 #define USER_H
 
 #include<string>
@@ -35,4 +35,4 @@ protected:
     std::string profilePhotoPath;
 };
 
-#endif // USER_H
+#endif
