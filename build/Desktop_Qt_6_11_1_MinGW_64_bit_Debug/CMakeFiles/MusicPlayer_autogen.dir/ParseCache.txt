@@ -409,3 +409,5 @@ F:/Project/C++/Project/MusicPlayer/albumrepository.h
 F:/Project/C++/Project/MusicPlayer/artistrepository.h
 F:/Project/C++/Project/MusicPlayer/albumrepository.cpp
 F:/Project/C++/Project/MusicPlayer/artistrepository.cpp
+F:/Project/C++/Project/MusicPlayer/sharedfeaturesmanager.h
+F:/Project/C++/Project/MusicPlayer/sharedfeaturesmanager.cpp

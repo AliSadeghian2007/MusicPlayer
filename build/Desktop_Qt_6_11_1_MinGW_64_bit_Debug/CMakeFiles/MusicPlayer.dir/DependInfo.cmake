@@ -22,6 +22,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "F:/Project/C++/Project/MusicPlayer/mainwindow.cpp" "CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj.d"
   "F:/Project/C++/Project/MusicPlayer/playlist.cpp" "CMakeFiles/MusicPlayer.dir/playlist.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/playlist.cpp.obj.d"
   "F:/Project/C++/Project/MusicPlayer/playlistrepository.cpp" "CMakeFiles/MusicPlayer.dir/playlistrepository.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/playlistrepository.cpp.obj.d"
+  "F:/Project/C++/Project/MusicPlayer/sharedfeaturesmanager.cpp" "CMakeFiles/MusicPlayer.dir/sharedfeaturesmanager.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/sharedfeaturesmanager.cpp.obj.d"
   "F:/Project/C++/Project/MusicPlayer/song.cpp" "CMakeFiles/MusicPlayer.dir/song.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/song.cpp.obj.d"
   "F:/Project/C++/Project/MusicPlayer/songrepository.cpp" "CMakeFiles/MusicPlayer.dir/songrepository.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/songrepository.cpp.obj.d"
   "F:/Project/C++/Project/MusicPlayer/user.cpp" "CMakeFiles/MusicPlayer.dir/user.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/user.cpp.obj.d"

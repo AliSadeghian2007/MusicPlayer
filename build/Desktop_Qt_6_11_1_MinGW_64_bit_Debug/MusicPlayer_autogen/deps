@@ -642,6 +642,8 @@ MusicPlayer_autogen/timestamp: \
 	F:/Project/C++/Project/MusicPlayer/playlist.h \
 	F:/Project/C++/Project/MusicPlayer/playlistrepository.cpp \
 	F:/Project/C++/Project/MusicPlayer/playlistrepository.h \
+	F:/Project/C++/Project/MusicPlayer/sharedfeaturesmanager.cpp \
+	F:/Project/C++/Project/MusicPlayer/sharedfeaturesmanager.h \
 	F:/Project/C++/Project/MusicPlayer/song.cpp \
 	F:/Project/C++/Project/MusicPlayer/song.h \
 	F:/Project/C++/Project/MusicPlayer/songrepository.cpp \

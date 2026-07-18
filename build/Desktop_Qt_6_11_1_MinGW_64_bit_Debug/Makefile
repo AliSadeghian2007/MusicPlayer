@@ -535,6 +535,30 @@ playlistrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/playlistrepository.cpp.s
 .PHONY : playlistrepository.cpp.s
 
+sharedfeaturesmanager.obj: sharedfeaturesmanager.cpp.obj
+.PHONY : sharedfeaturesmanager.obj
+
+# target to build an object file
+sharedfeaturesmanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/sharedfeaturesmanager.cpp.obj
+.PHONY : sharedfeaturesmanager.cpp.obj
+
+sharedfeaturesmanager.i: sharedfeaturesmanager.cpp.i
+.PHONY : sharedfeaturesmanager.i
+
+# target to preprocess a source file
+sharedfeaturesmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/sharedfeaturesmanager.cpp.i
+.PHONY : sharedfeaturesmanager.cpp.i
+
+sharedfeaturesmanager.s: sharedfeaturesmanager.cpp.s
+.PHONY : sharedfeaturesmanager.s
+
+# target to generate assembly for a file
+sharedfeaturesmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/sharedfeaturesmanager.cpp.s
+.PHONY : sharedfeaturesmanager.cpp.s
+
 song.obj: song.cpp.obj
 .PHONY : song.obj
 
@@ -664,6 +688,9 @@ help:
 	@echo ... playlistrepository.obj
 	@echo ... playlistrepository.i
 	@echo ... playlistrepository.s
+	@echo ... sharedfeaturesmanager.obj
+	@echo ... sharedfeaturesmanager.i
+	@echo ... sharedfeaturesmanager.s
 	@echo ... song.obj
 	@echo ... song.i
 	@echo ... song.s
