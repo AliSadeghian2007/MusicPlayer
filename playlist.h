@@ -8,7 +8,7 @@ class Playlist
 {
 public:
     Playlist(int id, int listenerId, const std::string& name);
-
+    void setId(int id){this->id=id;}
     int getId() const;
     int getListenerId() const;
     void addSong(int songId);

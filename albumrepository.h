@@ -9,8 +9,10 @@ class AlbumRepository : public AbstractRepository<Album>
 {
 private:
     std::vector<std::unique_ptr<Album>>albumha;
+    int nextId;
 public:
     AlbumRepository();
+    int generateId();
     bool save(std::unique_ptr<Album> item) override;
     bool remove(int id) override;
     Album* search (int id) const override;

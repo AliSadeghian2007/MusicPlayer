@@ -13,9 +13,10 @@ private:
     std::vector<std::unique_ptr<Song>>songs;
     PlaylistRepository* playlistRepo=nullptr;
     listenrRepository* listenerRepo=nullptr;
+    int nextId;
 public:
     SongRepository();
-
+    int generateId();
     bool save(std::unique_ptr<Song> item) override ;
     bool remove(int id) override;
     Song* search (int id) const override;

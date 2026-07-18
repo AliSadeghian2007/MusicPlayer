@@ -8,8 +8,10 @@ class PlaylistRepository : public AbstractRepository<Playlist>
 {
 private:
     std::vector<std::unique_ptr<Playlist>> playlistha;
+    int nextId;
 public:
     PlaylistRepository();
+    int generateId();
     bool save(std::unique_ptr<Playlist> item) override;
     bool remove(int id) override;
     Playlist* search (int id) const override;

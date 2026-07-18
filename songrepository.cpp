@@ -3,17 +3,30 @@
 #include "playlist.h"
 #include "playlistrepository.h"
 #include "listener.h"
-SongRepository::SongRepository() {}
-bool SongRepository::save(std::unique_ptr<Song>a)
-{
-    for(int i=0;i<songs.size();i++)
-    {
-        if (a->get_Id()==songs[i]->get_Id())
-        {
+SongRepository::SongRepository() : nextId(1) {}
 
+int SongRepository::generateId()
+{
+    return nextId++;
+}
+
+bool SongRepository::save(std::unique_ptr<Song> a)
+{
+    if (!a) return false;
+
+    if (a->get_Id() == 0)
+    {
+        a->setId(generateId());
+    }
+
+    for (int i = 0; i < songs.size(); i++)
+    {
+        if (a->get_Id() == songs[i]->get_Id())
+        {
             return false;
         }
     }
+
     songs.push_back(std::move(a));
     return true;
 }

@@ -12,10 +12,11 @@ Song::Song()
 {
 }
 
-Song::Song(int id, int artistId, int albumId, const std::string& name,
+Song::Song( int id,int artistId, int albumId, const std::string& name,
            const std::string& fileName, const std::string& genre,
            int releaseYear, const std::string& coverPath)
-    : id(id),
+    :
+    id(id),
     fileName(fileName),
     genre(genre),
     releaseYear(releaseYear),

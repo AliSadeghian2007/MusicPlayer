@@ -392,6 +392,7 @@ F:/Project/C++/Project/MusicPlayer/user.cpp
 F:/Project/C++/Project/MusicPlayer/user.h
 F:/Project/C++/Project/MusicPlayer/abstractrepository.cpp
 F:/Project/C++/Project/MusicPlayer/accountrepository.cpp
+F:/Project/C++/Project/MusicPlayer/artistmanager.h
 F:/Project/C++/Project/MusicPlayer/album.cpp
 F:/Project/C++/Project/MusicPlayer/artist.cpp
 F:/Project/C++/Project/MusicPlayer/listener.cpp
@@ -406,6 +407,7 @@ F:/Project/C++/Project/MusicPlayer/songrepository.cpp
 F:/Project/C++/Project/MusicPlayer/listenrrepository.h
 F:/Project/C++/Project/MusicPlayer/listenrrepository.cpp
 F:/Project/C++/Project/MusicPlayer/albumrepository.h
+F:/Project/C++/Project/MusicPlayer/artistmanager.cpp
 F:/Project/C++/Project/MusicPlayer/artistrepository.h
 F:/Project/C++/Project/MusicPlayer/albumrepository.cpp
 F:/Project/C++/Project/MusicPlayer/artistrepository.cpp

@@ -2,8 +2,7 @@
 
 Playlist::Playlist(int id, int listenerId, const std::string& name)
     : listenerId(listenerId),
-    name(name),
-    id(id)
+    name(name),id(id)
 {
 }
 

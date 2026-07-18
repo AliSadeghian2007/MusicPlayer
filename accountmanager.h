@@ -5,7 +5,6 @@
 class AccountManager
 {
 private:
-    static int nextid;
     AccountRepository repo;
 public:
     AccountManager();

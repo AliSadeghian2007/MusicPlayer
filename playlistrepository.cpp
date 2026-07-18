@@ -1,19 +1,29 @@
 #include "playlistrepository.h"
 
-PlaylistRepository::PlaylistRepository() {}
-bool PlaylistRepository::save(std::unique_ptr<Playlist>a)
+PlaylistRepository::PlaylistRepository() : nextId(1) {}
+
+int PlaylistRepository::generateId()
+{
+    return nextId++;
+}
+
+bool PlaylistRepository::save(std::unique_ptr<Playlist> a)
 {
     if (!a) return false;
 
-    for(int i=0;i<playlistha.size();i++)
+    if (a->getId() == 0)
     {
+        a->setId(generateId());
+    }
 
-        if (a->getId()==playlistha[i]->getId())
+    for (int i = 0; i < playlistha.size(); i++)
+    {
+        if (a->getId() == playlistha[i]->getId())
         {
-
             return false;
         }
     }
+
     playlistha.push_back(std::move(a));
     return true;
 }

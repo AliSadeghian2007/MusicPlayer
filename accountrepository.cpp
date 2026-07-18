@@ -1,21 +1,35 @@
 #include "accountrepository.h"
 
-AccountRepository::AccountRepository() {}
+AccountRepository::AccountRepository() : nextId(1) {}
 
-
-bool AccountRepository::save(std::unique_ptr<User>a)
+int AccountRepository::generateId()
 {
-    for(int i=0;i<users.size();i++)
-    {
-        if (a->getId()==users[i]->getId() || a->getUserName()==users[i]->getUserName())
-        {
+    return nextId++;
+}
 
+
+
+bool AccountRepository::save(std::unique_ptr<User> a)
+{
+    if (!a) return false;
+
+    if (a->getId() == 0)
+    {
+        a->setId(generateId());
+    }
+
+    for (int i = 0; i < users.size(); i++)
+    {
+        if (a->getId() == users[i]->getId() || a->getUserName() == users[i]->getUserName())
+        {
             return false;
         }
     }
+
     users.push_back(std::move(a));
     return true;
 }
+
 
 
 bool AccountRepository::remove(int id)

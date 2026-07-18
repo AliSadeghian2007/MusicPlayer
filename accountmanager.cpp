@@ -1,6 +1,5 @@
 #include "accountmanager.h"
 #include<memory>
-int AccountManager::nextid = 1;
 AccountManager::AccountManager() {}
 void AccountManager::registerAccount(const std::string& username,
                      const std::string& password,
@@ -9,8 +8,7 @@ void AccountManager::registerAccount(const std::string& username,
                      const std::string& role,
                      const std::string& profilePhotoPath)
 {
-     int newid = nextid++;
-    std::unique_ptr<User>a=std::make_unique<User>(newid, username, password, fullName, biography, role, profilePhotoPath);
+    std::unique_ptr<User> a = std::make_unique<User>(0, username, password, fullName, biography, role, profilePhotoPath);
     repo.save(std::move(a));
 }
 

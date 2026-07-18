@@ -1,17 +1,28 @@
 #include "albumrepository.h"
 
-AlbumRepository::AlbumRepository() {}
+AlbumRepository::AlbumRepository() : nextId(1) {}
 
-bool AlbumRepository::save(std::unique_ptr<Album>a)
+int AlbumRepository::generateId()
 {
-    for(int i=0;i<albumha.size();i++)
-    {
-        if (a->getId()==albumha[i]->getId() )
-        {
+    return nextId++;
+}
+bool AlbumRepository::save(std::unique_ptr<Album> a)
+{
+    if (!a) return false;
 
+    if (a->getId() == 0)
+    {
+        a->setId(generateId());
+    }
+
+    for (int i = 0; i < albumha.size(); i++)
+    {
+        if (a->getId() == albumha[i]->getId())
+        {
             return false;
         }
     }
+
     albumha.push_back(std::move(a));
     return true;
 }

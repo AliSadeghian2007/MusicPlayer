@@ -367,6 +367,30 @@ artist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artist.cpp.s
 .PHONY : artist.cpp.s
 
+artistmanager.obj: artistmanager.cpp.obj
+.PHONY : artistmanager.obj
+
+# target to build an object file
+artistmanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artistmanager.cpp.obj
+.PHONY : artistmanager.cpp.obj
+
+artistmanager.i: artistmanager.cpp.i
+.PHONY : artistmanager.i
+
+# target to preprocess a source file
+artistmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artistmanager.cpp.i
+.PHONY : artistmanager.cpp.i
+
+artistmanager.s: artistmanager.cpp.s
+.PHONY : artistmanager.s
+
+# target to generate assembly for a file
+artistmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artistmanager.cpp.s
+.PHONY : artistmanager.cpp.s
+
 artistrepository.obj: artistrepository.cpp.obj
 .PHONY : artistrepository.obj
 
@@ -667,6 +691,9 @@ help:
 	@echo ... artist.obj
 	@echo ... artist.i
 	@echo ... artist.s
+	@echo ... artistmanager.obj
+	@echo ... artistmanager.i
+	@echo ... artistmanager.s
 	@echo ... artistrepository.obj
 	@echo ... artistrepository.i
 	@echo ... artistrepository.s

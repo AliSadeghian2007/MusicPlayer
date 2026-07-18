@@ -29,6 +29,10 @@ public:
         return coverPath;
     }
 
+    void setId(int id)
+    {
+        this->id=id;
+    }
 private:
     std::string coverPath;
     int artistId;

@@ -414,6 +414,12 @@
 			null
 		],
 		[
+			"F:/Project/C++/Project/MusicPlayer/artistmanager.h",
+			"MU",
+			"EWIEGA46WW/moc_artistmanager.cpp",
+			null
+		],
+		[
 			"F:/Project/C++/Project/MusicPlayer/artistrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_artistrepository.cpp",
@@ -559,6 +565,7 @@
 		[ "F:/Project/C++/Project/MusicPlayer/album.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/albumrepository.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/artist.cpp", "MU", null ],
+		[ "F:/Project/C++/Project/MusicPlayer/artistmanager.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/artistrepository.cpp", "MU", null ],
 		[ "F:/Project/C++/Project/MusicPlayer/listener.cpp", "MU", null ],
 		[

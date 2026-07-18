@@ -7,10 +7,13 @@
 #include <vector>
 class AccountRepository : public AbstractRepository<User>
 {
+private:
+    int nextId;
 protected:
     std::vector<std::unique_ptr<User>> users;
 public:
     AccountRepository();
+    int generateId();
 
 
     bool save(std::unique_ptr<User> item) override;
