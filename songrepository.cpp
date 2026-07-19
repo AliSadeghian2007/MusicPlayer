@@ -66,7 +66,7 @@ std::vector<Song*> SongRepository::singleSongs(int artistId) const
     int size=songs.size();
     for(int i=0;i<size;i++)
     {
-        if(songs[i]->getartistId()==artistId && songs[i]->getAlbumId()==-1)
+        if(songs[i]->getartistId()==artistId && songs[i]->getAlbumId()==0)
         {
             singel.push_back(songs[i].get());
         }

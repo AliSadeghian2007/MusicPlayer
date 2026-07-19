@@ -1291,7 +1291,9 @@ CMakeFiles/MusicPlayer.dir/artistmanager.cpp.obj: F:/Project/C++/Project/MusicPl
   F:/Project/C++/Project/MusicPlayer/abstractrepository.h \
   F:/Project/C++/Project/MusicPlayer/album.h \
   F:/Project/C++/Project/MusicPlayer/albumrepository.h \
-  F:/Project/C++/Project/MusicPlayer/artistmanager.h
+  F:/Project/C++/Project/MusicPlayer/artistmanager.h \
+  F:/Project/C++/Project/MusicPlayer/song.h \
+  F:/Project/C++/Project/MusicPlayer/songrepository.h
 
 CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj: F:/Project/C++/Project/MusicPlayer/artistrepository.cpp \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \

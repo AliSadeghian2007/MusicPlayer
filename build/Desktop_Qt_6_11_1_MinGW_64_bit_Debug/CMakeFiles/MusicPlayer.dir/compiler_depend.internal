@@ -1300,6 +1300,8 @@ CMakeFiles/MusicPlayer.dir/artistmanager.cpp.obj
  F:/Project/C++/Project/MusicPlayer/album.h
  F:/Project/C++/Project/MusicPlayer/albumrepository.h
  F:/Project/C++/Project/MusicPlayer/artistmanager.h
+ F:/Project/C++/Project/MusicPlayer/song.h
+ F:/Project/C++/Project/MusicPlayer/songrepository.h
 
 CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj
  F:/Project/C++/Project/MusicPlayer/artistrepository.cpp

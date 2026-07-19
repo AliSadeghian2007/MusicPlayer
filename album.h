@@ -23,6 +23,13 @@ public:
     {
         return name;
     }
+    void setName(const std::string& name) {
+        this->name = name;
+    }
+
+    void setCoverPath(const std::string& coverPath) {
+        this->coverPath = coverPath;
+    }
 
     const std::string& getCoverPath() const
     {
