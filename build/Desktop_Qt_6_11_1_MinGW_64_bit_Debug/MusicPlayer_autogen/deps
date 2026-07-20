@@ -635,6 +635,8 @@ MusicPlayer_autogen/timestamp: \
 	F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/moc_predefs.h \
 	F:/Project/C++/Project/MusicPlayer/listener.cpp \
 	F:/Project/C++/Project/MusicPlayer/listener.h \
+	F:/Project/C++/Project/MusicPlayer/listenermanager.cpp \
+	F:/Project/C++/Project/MusicPlayer/listenermanager.h \
 	F:/Project/C++/Project/MusicPlayer/listenrrepository.cpp \
 	F:/Project/C++/Project/MusicPlayer/listenrrepository.h \
 	F:/Project/C++/Project/MusicPlayer/main.cpp \

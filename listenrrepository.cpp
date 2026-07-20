@@ -1,86 +1,85 @@
+
 #include "listenrrepository.h"
 #include "listener.h"
 
-listenrRepository::listenrRepository() {}
-
-
-void listenrRepository::updatedLike(int listenerId,int songId,bool liked)
+listenrRepository::listenrRepository()
 {
-    Listener* a = nullptr;
+}
+
+void listenrRepository::updatedLike(int listenerId, int songId, bool liked)
+{
+    Listener* foundListener = nullptr;
 
     for (int i = 0; i < users.size(); i++)
     {
         if (users[i]->getId() == listenerId)
         {
-            a = dynamic_cast<Listener*>(users[i].get());
+            foundListener = dynamic_cast<Listener*>(users[i].get());
             break;
         }
     }
 
-    if (a == nullptr)
+    if (foundListener == nullptr)
     {
         return;
     }
 
-    std::vector<int> b = a->getIdLikedSong();
+    std::vector<int> likedSongs = foundListener->getIdLikedSong();
 
     if (liked == true)
     {
 
-        for (int i = 0; i < b.size(); i++)
+        for (int i = 0; i < likedSongs.size(); i++)
         {
-            if (b[i] == songId)
+            if (likedSongs[i] == songId)
             {
                 return;
             }
         }
 
-        a->setIdLikedSongs(songId);
+        foundListener->setIdLikedSongs(songId);
     }
     else
     {
-        for (int i = 0; i < b.size(); i++)
+
+        for (int i = 0; i < likedSongs.size(); i++)
         {
-            if (b[i] == songId)
+            if (likedSongs[i] == songId)
             {
-                a->deleteLikedSong(i);
+                foundListener->deleteLikedSong(i);
                 return;
             }
         }
-
     }
 }
 
-
-
-bool listenrRepository::isLiked(int listenerId,int songId)
+bool listenrRepository::isLiked(int listenerId, int songId) const
 {
-    Listener* a=nullptr;
+    Listener* foundListener = nullptr;
 
     for (int i = 0; i < users.size(); i++)
     {
         if (users[i]->getId() == listenerId)
         {
-            a = dynamic_cast<Listener*>(users[i].get());
+            foundListener = dynamic_cast<Listener*>(users[i].get());
             break;
         }
     }
 
-    if (a == nullptr)
+    if (foundListener == nullptr)
     {
         return false;
     }
-    std::vector<int> songs = a->getIdLikedSong();
 
-    for (int i = 0; i < songs.size(); i++)
+    std::vector<int> likedSongs = foundListener->getIdLikedSong();
+
+    for (int i = 0; i < likedSongs.size(); i++)
     {
-        if (songs[i] == songId)
+        if (likedSongs[i] == songId)
         {
             return true;
         }
     }
 
     return false;
-
-
 }

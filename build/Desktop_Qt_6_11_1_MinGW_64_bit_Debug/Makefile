@@ -439,6 +439,30 @@ listener.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listener.cpp.s
 .PHONY : listener.cpp.s
 
+listenermanager.obj: listenermanager.cpp.obj
+.PHONY : listenermanager.obj
+
+# target to build an object file
+listenermanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenermanager.cpp.obj
+.PHONY : listenermanager.cpp.obj
+
+listenermanager.i: listenermanager.cpp.i
+.PHONY : listenermanager.i
+
+# target to preprocess a source file
+listenermanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenermanager.cpp.i
+.PHONY : listenermanager.cpp.i
+
+listenermanager.s: listenermanager.cpp.s
+.PHONY : listenermanager.s
+
+# target to generate assembly for a file
+listenermanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenermanager.cpp.s
+.PHONY : listenermanager.cpp.s
+
 listenrrepository.obj: listenrrepository.cpp.obj
 .PHONY : listenrrepository.obj
 
@@ -700,6 +724,9 @@ help:
 	@echo ... listener.obj
 	@echo ... listener.i
 	@echo ... listener.s
+	@echo ... listenermanager.obj
+	@echo ... listenermanager.i
+	@echo ... listenermanager.s
 	@echo ... listenrrepository.obj
 	@echo ... listenrrepository.i
 	@echo ... listenrrepository.s

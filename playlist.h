@@ -15,6 +15,7 @@ public:
     const std::vector<int>& getSongIds() const;
     std::string getName() const;
     void removeSong(int songId);
+    void setName(std::string name){this->name=name;}
 
 private:
     int listenerId;
