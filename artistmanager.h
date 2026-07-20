@@ -1,6 +1,7 @@
 #ifndef ARTISTMANAGER_H
 #define ARTISTMANAGER_H
 
+#include "accountrepository.h"
 #include "albumrepository.h"
 #include "songrepository.h"
 #include <string>
@@ -9,11 +10,16 @@
 class ArtistManager
 {
 private:
-    AlbumRepository albumRepo;
-    SongRepository songRepo;
+    AlbumRepository& albumRepo;
+    SongRepository& songRepo;
+    AccountRepository& accountRepo;
+
+    bool isArtist(int artistId) const;
 
 public:
-    ArtistManager();
+    ArtistManager(AlbumRepository& albumRepo,
+                  SongRepository& songRepo,
+                  AccountRepository& accountRepo);
 
     void createAlbum(const std::string& coverPath, int artistId, const std::string& name);
 

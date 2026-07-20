@@ -1,11 +1,21 @@
 #include "listenermanager.h"
 
-ListenerManager::ListenerManager()
+#include <memory>
+
+ListenerManager::ListenerManager(ArtistRepository& artistRepository,
+                                 AlbumRepository& albumRepository,
+                                 SongRepository& songRepository,
+                                 PlaylistRepository& playlistRepository,
+                                 listenrRepository& listenerRepository)
+    : artistRepository(artistRepository),
+    albumRepository(albumRepository),
+    songRepository(songRepository),
+    playlistRepository(playlistRepository),
+    listenerRepository(listenerRepository)
 {
     songRepository.setListenerRepository(&listenerRepository);
     songRepository.setPlaylistRepository(&playlistRepository);
 }
-
 
 std::vector<Artist*> ListenerManager::getAllArtists() const
 {
@@ -25,35 +35,41 @@ std::vector<Song*> ListenerManager::getArtistSingles(int artistId) const
 Artist* ListenerManager::getArtistById(int artistId) const
 {
     User* user = artistRepository.search(artistId);
+
+    if (user == nullptr)
+    {
+        return nullptr;
+    }
+
     Artist* artist = dynamic_cast<Artist*>(user);
+
     return artist;
 }
-
-
 
 std::vector<Playlist*> ListenerManager::getPlaylistsByUserId(int userId) const
 {
     return playlistRepository.playlists(userId);
 }
 
-
 std::vector<Song*> ListenerManager::getSongsInPlaylist(int playlistId) const
 {
     std::vector<Song*> result;
 
-
     Playlist* playlist = playlistRepository.search(playlistId);
-    if (playlist == nullptr) {
+
+    if (playlist == nullptr)
+    {
         return result;
     }
 
-
     const std::vector<int>& songIds = playlist->getSongIds();
 
-
-    for (size_t i = 0; i < songIds.size(); ++i) {
+    for (size_t i = 0; i < songIds.size(); ++i)
+    {
         Song* song = songRepository.search(songIds[i]);
-        if (song != nullptr) {
+
+        if (song != nullptr)
+        {
             result.push_back(song);
         }
     }
@@ -61,30 +77,22 @@ std::vector<Song*> ListenerManager::getSongsInPlaylist(int playlistId) const
     return result;
 }
 
-
-
-
-bool ListenerManager::createPlaylist(
-    int listenerId,
-    const std::string& name)
+bool ListenerManager::createPlaylist(int listenerId, const std::string& name)
 {
     if (name.empty())
     {
         return false;
     }
 
-    std::unique_ptr<Playlist> playlist=std::make_unique<Playlist>(0,listenerId,name);
+    std::unique_ptr<Playlist> playlist =
+        std::make_unique<Playlist>(0, listenerId, name);
 
     return playlistRepository.save(std::move(playlist));
 }
 
-
-
-
-bool ListenerManager::editPlaylist(
-    int playlistId,
-    int userId,
-    const std::string& newName)
+bool ListenerManager::editPlaylist(int playlistId,
+                                   int userId,
+                                   const std::string& newName)
 {
     Playlist* playlist = playlistRepository.search(playlistId);
 
@@ -108,11 +116,9 @@ bool ListenerManager::editPlaylist(
     return true;
 }
 
-
-bool ListenerManager::addSongToPlaylist(
-    int playlistId,
-    int userId,
-    int songId)
+bool ListenerManager::addSongToPlaylist(int playlistId,
+                                        int userId,
+                                        int songId)
 {
     Playlist* playlist = playlistRepository.search(playlistId);
 
@@ -136,12 +142,9 @@ bool ListenerManager::addSongToPlaylist(
     return playlistRepository.insertSong(playlistId, songId);
 }
 
-
-
-bool ListenerManager::removeSongFromPlaylist(
-    int playlistId,
-    int userId,
-    int songId)
+bool ListenerManager::removeSongFromPlaylist(int playlistId,
+                                             int userId,
+                                             int songId)
 {
     Playlist* playlist = playlistRepository.search(playlistId);
 
@@ -178,6 +181,7 @@ bool ListenerManager::deletePlaylist(int listenerId, int playlistId)
 bool ListenerManager::likeSong(int listenerId, int songId)
 {
     Song* song = songRepository.search(songId);
+
     if (song == nullptr)
     {
         return false;
@@ -189,6 +193,7 @@ bool ListenerManager::likeSong(int listenerId, int songId)
     }
 
     listenerRepository.updatedLike(listenerId, songId, true);
+
     return listenerRepository.isLiked(listenerId, songId);
 }
 
@@ -200,6 +205,7 @@ bool ListenerManager::unlikeSong(int listenerId, int songId)
     }
 
     listenerRepository.updatedLike(listenerId, songId, false);
+
     return !listenerRepository.isLiked(listenerId, songId);
 }
 
@@ -212,8 +218,4 @@ std::vector<Song*> ListenerManager::getLikedSongs(int listenerId) const
 {
     return songRepository.getByLikedSongs(listenerId);
 }
-
-
-
-
 

@@ -399,4 +399,20 @@ CMakeFiles/MusicPlayer.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qlocale.h \
- C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication_platform.h
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication_platform.h \
+ F:\Project\C++\Project\MusicPlayer\accountrepository.h \
+ F:\Project\C++\Project\MusicPlayer\abstractrepository.h \
+ F:\Project\C++\Project\MusicPlayer\user.h \
+ F:\Project\C++\Project\MusicPlayer\artistrepository.h \
+ F:\Project\C++\Project\MusicPlayer\artist.h \
+ F:\Project\C++\Project\MusicPlayer\listenrrepository.h \
+ F:\Project\C++\Project\MusicPlayer\albumrepository.h \
+ F:\Project\C++\Project\MusicPlayer\album.h \
+ F:\Project\C++\Project\MusicPlayer\songrepository.h \
+ F:\Project\C++\Project\MusicPlayer\song.h \
+ F:\Project\C++\Project\MusicPlayer\playlistrepository.h \
+ F:\Project\C++\Project\MusicPlayer\playlist.h \
+ F:\Project\C++\Project\MusicPlayer\accountmanager.h \
+ F:\Project\C++\Project\MusicPlayer\artistmanager.h \
+ F:\Project\C++\Project\MusicPlayer\listenermanager.h \
+ F:\Project\C++\Project\MusicPlayer\sharedfeaturesmanager.h

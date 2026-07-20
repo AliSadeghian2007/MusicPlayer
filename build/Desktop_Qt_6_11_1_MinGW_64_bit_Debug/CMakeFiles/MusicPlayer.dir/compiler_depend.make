@@ -553,6 +553,7 @@ CMakeFiles/MusicPlayer.dir/accountmanager.cpp.obj: F:/Project/C++/Project/MusicP
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
+  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
@@ -593,6 +594,7 @@ CMakeFiles/MusicPlayer.dir/accountmanager.cpp.obj: F:/Project/C++/Project/MusicP
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -648,6 +650,8 @@ CMakeFiles/MusicPlayer.dir/accountmanager.cpp.obj: F:/Project/C++/Project/MusicP
   F:/Project/C++/Project/MusicPlayer/abstractrepository.h \
   F:/Project/C++/Project/MusicPlayer/accountmanager.h \
   F:/Project/C++/Project/MusicPlayer/accountrepository.h \
+  F:/Project/C++/Project/MusicPlayer/artist.h \
+  F:/Project/C++/Project/MusicPlayer/listener.h \
   F:/Project/C++/Project/MusicPlayer/user.h
 
 CMakeFiles/MusicPlayer.dir/accountrepository.cpp.obj: F:/Project/C++/Project/MusicPlayer/accountrepository.cpp \
@@ -1289,11 +1293,13 @@ CMakeFiles/MusicPlayer.dir/artistmanager.cpp.obj: F:/Project/C++/Project/MusicPl
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   F:/Project/C++/Project/MusicPlayer/abstractrepository.h \
+  F:/Project/C++/Project/MusicPlayer/accountrepository.h \
   F:/Project/C++/Project/MusicPlayer/album.h \
   F:/Project/C++/Project/MusicPlayer/albumrepository.h \
   F:/Project/C++/Project/MusicPlayer/artistmanager.h \
   F:/Project/C++/Project/MusicPlayer/song.h \
-  F:/Project/C++/Project/MusicPlayer/songrepository.h
+  F:/Project/C++/Project/MusicPlayer/songrepository.h \
+  F:/Project/C++/Project/MusicPlayer/user.h
 
 CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj: F:/Project/C++/Project/MusicPlayer/artistrepository.cpp \
   C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
@@ -2256,7 +2262,23 @@ CMakeFiles/MusicPlayer.dir/main.cpp.obj: F:/Project/C++/Project/MusicPlayer/main
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  F:/Project/C++/Project/MusicPlayer/mainwindow.h
+  F:/Project/C++/Project/MusicPlayer/abstractrepository.h \
+  F:/Project/C++/Project/MusicPlayer/accountmanager.h \
+  F:/Project/C++/Project/MusicPlayer/accountrepository.h \
+  F:/Project/C++/Project/MusicPlayer/album.h \
+  F:/Project/C++/Project/MusicPlayer/albumrepository.h \
+  F:/Project/C++/Project/MusicPlayer/artist.h \
+  F:/Project/C++/Project/MusicPlayer/artistmanager.h \
+  F:/Project/C++/Project/MusicPlayer/artistrepository.h \
+  F:/Project/C++/Project/MusicPlayer/listenermanager.h \
+  F:/Project/C++/Project/MusicPlayer/listenrrepository.h \
+  F:/Project/C++/Project/MusicPlayer/mainwindow.h \
+  F:/Project/C++/Project/MusicPlayer/playlist.h \
+  F:/Project/C++/Project/MusicPlayer/playlistrepository.h \
+  F:/Project/C++/Project/MusicPlayer/sharedfeaturesmanager.h \
+  F:/Project/C++/Project/MusicPlayer/song.h \
+  F:/Project/C++/Project/MusicPlayer/songrepository.h \
+  F:/Project/C++/Project/MusicPlayer/user.h
 
 CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj: F:/Project/C++/Project/MusicPlayer/mainwindow.cpp \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
@@ -4277,6 +4299,8 @@ F:/Project/C++/Project/MusicPlayer/accountmanager.h:
 
 F:/Project/C++/Project/MusicPlayer/accountrepository.h:
 
+F:/Project/C++/Project/MusicPlayer/listener.h:
+
 F:/Project/C++/Project/MusicPlayer/user.h:
 
 F:/Project/C++/Project/MusicPlayer/accountrepository.cpp:
@@ -4292,8 +4316,6 @@ F:/Project/C++/Project/MusicPlayer/artist.cpp:
 F:/Project/C++/Project/MusicPlayer/artistmanager.cpp:
 
 F:/Project/C++/Project/MusicPlayer/artistrepository.cpp:
-
-F:/Project/C++/Project/MusicPlayer/listener.h:
 
 F:/Project/C++/Project/MusicPlayer/playlistrepository.h:
 

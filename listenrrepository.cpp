@@ -1,23 +1,28 @@
-
 #include "listenrrepository.h"
+
+#include <vector>
 #include "listener.h"
 
-listenrRepository::listenrRepository()
+listenrRepository::listenrRepository(AccountRepository& accountRepository)
+    : accountRepository(accountRepository)
 {
+}
+
+User* listenrRepository::search(int id) const
+{
+    return accountRepository.search(id);
 }
 
 void listenrRepository::updatedLike(int listenerId, int songId, bool liked)
 {
-    Listener* foundListener = nullptr;
+    User* user = accountRepository.search(listenerId);
 
-    for (int i = 0; i < users.size(); i++)
+    if (user == nullptr)
     {
-        if (users[i]->getId() == listenerId)
-        {
-            foundListener = dynamic_cast<Listener*>(users[i].get());
-            break;
-        }
+        return;
     }
+
+    Listener* foundListener = dynamic_cast<Listener*>(user);
 
     if (foundListener == nullptr)
     {
@@ -26,10 +31,9 @@ void listenrRepository::updatedLike(int listenerId, int songId, bool liked)
 
     std::vector<int> likedSongs = foundListener->getIdLikedSong();
 
-    if (liked == true)
+    if (liked)
     {
-
-        for (int i = 0; i < likedSongs.size(); i++)
+        for (size_t i = 0; i < likedSongs.size(); ++i)
         {
             if (likedSongs[i] == songId)
             {
@@ -38,33 +42,29 @@ void listenrRepository::updatedLike(int listenerId, int songId, bool liked)
         }
 
         foundListener->setIdLikedSongs(songId);
+        return;
     }
-    else
-    {
 
-        for (int i = 0; i < likedSongs.size(); i++)
+    for (size_t i = 0; i < likedSongs.size(); ++i)
+    {
+        if (likedSongs[i] == songId)
         {
-            if (likedSongs[i] == songId)
-            {
-                foundListener->deleteLikedSong(i);
-                return;
-            }
+            foundListener->deleteLikedSong(static_cast<int>(i));
+            return;
         }
     }
 }
 
 bool listenrRepository::isLiked(int listenerId, int songId) const
 {
-    Listener* foundListener = nullptr;
+    User* user = accountRepository.search(listenerId);
 
-    for (int i = 0; i < users.size(); i++)
+    if (user == nullptr)
     {
-        if (users[i]->getId() == listenerId)
-        {
-            foundListener = dynamic_cast<Listener*>(users[i].get());
-            break;
-        }
+        return false;
     }
+
+    Listener* foundListener = dynamic_cast<Listener*>(user);
 
     if (foundListener == nullptr)
     {
@@ -73,7 +73,7 @@ bool listenrRepository::isLiked(int listenerId, int songId) const
 
     std::vector<int> likedSongs = foundListener->getIdLikedSong();
 
-    for (int i = 0; i < likedSongs.size(); i++)
+    for (size_t i = 0; i < likedSongs.size(); ++i)
     {
         if (likedSongs[i] == songId)
         {
@@ -83,3 +83,4 @@ bool listenrRepository::isLiked(int listenerId, int songId) const
 
     return false;
 }
+

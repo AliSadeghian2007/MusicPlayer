@@ -1,50 +1,107 @@
 #include "artistmanager.h"
 #include "album.h"
+#include "artist.h"
 #include "song.h"
 #include <memory>
 
-ArtistManager::ArtistManager() {}
-
-void ArtistManager::createAlbum(const std::string& coverPath, int artistId, const std::string& name)
+ArtistManager::ArtistManager(AlbumRepository& albumRepo,
+                             SongRepository& songRepo,
+                             AccountRepository& accountRepo)
+    : albumRepo(albumRepo),
+    songRepo(songRepo),
+    accountRepo(accountRepo)
 {
-    std::unique_ptr<Album> album = std::make_unique<Album>(0, artistId, name, coverPath);
+}
+
+bool ArtistManager::isArtist(int artistId) const
+{
+    User* user = accountRepo.search(artistId);
+
+    if (user == nullptr)
+    {
+        return false;
+    }
+
+    Artist* artist = dynamic_cast<Artist*>(user);
+
+    if (artist == nullptr)
+    {
+        return false;
+    }
+
+    return true;
+}
+
+void ArtistManager::createAlbum(const std::string& coverPath,
+                                int artistId,
+                                const std::string& name)
+{
+    if (!isArtist(artistId))
+    {
+        return;
+    }
+
+    std::unique_ptr<Album> album =
+        std::make_unique<Album>(0, artistId, name, coverPath);
+
     albumRepo.save(std::move(album));
 }
 
-void ArtistManager::createSong(int albumId, int artistId, const std::string& name,
-                               const std::string& fileName, const std::string& genre,
-                               int releaseYear, const std::string& coverPath)
+void ArtistManager::createSong(int albumId,
+                               int artistId,
+                               const std::string& name,
+                               const std::string& fileName,
+                               const std::string& genre,
+                               int releaseYear,
+                               const std::string& coverPath)
 {
+    if (!isArtist(artistId))
+    {
+        return;
+    }
+
     int finalAlbumId = 0;
 
     if (albumId > 0)
     {
         Album* album = albumRepo.search(albumId);
+
         if (album != nullptr && album->getArtistId() == artistId)
         {
             finalAlbumId = albumId;
         }
     }
 
-    std::unique_ptr<Song> song = std::make_unique<Song>(
-        0,
-        artistId,
-        finalAlbumId,
-        name,
-        fileName,
-        genre,
-        releaseYear,
-        coverPath
-        );
+    std::unique_ptr<Song> song =
+        std::make_unique<Song>(
+            0,
+            artistId,
+            finalAlbumId,
+            name,
+            fileName,
+            genre,
+            releaseYear,
+            coverPath);
 
     songRepo.save(std::move(song));
 }
 
-bool ArtistManager::editSong(int artistId, int songId, const std::string& name,
-                             const std::string& fileName, const std::string& genre,
-                             int releaseYear, const std::string& coverPath, int albumId)
+bool ArtistManager::editSong(int artistId,
+                             int songId,
+                             const std::string& name,
+                             const std::string& fileName,
+                             const std::string& genre,
+                             int releaseYear,
+                             const std::string& coverPath,
+                             int albumId)
 {
+    if (!isArtist(artistId))
+    {
+        return false;
+    }
+
     Song* song = songRepo.search(songId);
+
     if (song == nullptr)
     {
         return false;
@@ -60,6 +117,7 @@ bool ArtistManager::editSong(int artistId, int songId, const std::string& name,
     if (albumId > 0)
     {
         Album* album = albumRepo.search(albumId);
+
         if (album == nullptr)
         {
             return false;
@@ -83,10 +141,18 @@ bool ArtistManager::editSong(int artistId, int songId, const std::string& name,
     return true;
 }
 
-bool ArtistManager::editAlbum(int artistId, int albumId, const std::string& name,
+bool ArtistManager::editAlbum(int artistId,
+                              int albumId,
+                              const std::string& name,
                               const std::string& coverPath)
 {
+    if (!isArtist(artistId))
+    {
+        return false;
+    }
+
     Album* album = albumRepo.search(albumId);
+
     if (album == nullptr)
     {
         return false;
@@ -103,10 +169,15 @@ bool ArtistManager::editAlbum(int artistId, int albumId, const std::string& name
     return true;
 }
 
-
 bool ArtistManager::deleteSong(int artistId, int songId)
 {
+    if (!isArtist(artistId))
+    {
+        return false;
+    }
+
     Song* song = songRepo.search(songId);
+
     if (song == nullptr)
     {
         return false;
@@ -122,7 +193,13 @@ bool ArtistManager::deleteSong(int artistId, int songId)
 
 bool ArtistManager::deleteAlbum(int artistId, int albumId)
 {
+    if (!isArtist(artistId))
+    {
+        return false;
+    }
+
     Album* album = albumRepo.search(albumId);
+
     if (album == nullptr)
     {
         return false;
@@ -148,11 +225,21 @@ bool ArtistManager::deleteAlbum(int artistId, int albumId)
 
 std::vector<Album*> ArtistManager::getAlbums(int artistId) const
 {
+    if (!isArtist(artistId))
+    {
+        return std::vector<Album*>();
+    }
+
     return albumRepo.albums(artistId);
 }
 
 std::vector<Song*> ArtistManager::getSingles(int artistId) const
 {
+    if (!isArtist(artistId))
+    {
+        return std::vector<Song*>();
+    }
+
     return songRepo.singleSongs(artistId);
 }
 
@@ -160,7 +247,13 @@ std::vector<Song*> ArtistManager::getAlbumSongs(int artistId, int albumId) const
 {
     std::vector<Song*> result;
 
+    if (!isArtist(artistId))
+    {
+        return result;
+    }
+
     Album* album = albumRepo.search(albumId);
+
     if (album == nullptr)
     {
         return result;
@@ -174,9 +267,4 @@ std::vector<Song*> ArtistManager::getAlbumSongs(int artistId, int albumId) const
     result = songRepo.getByAlbum(albumId);
     return result;
 }
-
-
-
-
-
 

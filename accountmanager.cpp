@@ -1,40 +1,88 @@
 #include "accountmanager.h"
-#include<memory>
-AccountManager::AccountManager() {}
-void AccountManager::registerAccount(const std::string& username,
-                     const std::string& password,
-                     const std::string& fullName,
-                     const std::string& biography,
-                     const std::string& role,
-                     const std::string& profilePhotoPath)
+
+#include <memory>
+
+#include "artist.h"
+#include "listener.h"
+
+AccountManager::AccountManager(AccountRepository& repo)
+    : repo(repo)
 {
-    std::unique_ptr<User> a = std::make_unique<User>(0, username, password, fullName, biography, role, profilePhotoPath);
-    repo.save(std::move(a));
 }
 
+bool AccountManager::registerAccount(
+    const std::string& username,
+    const std::string& password,
+    const std::string& fullName,
+    const std::string& biography,
+    const std::string& role,
+    const std::string& profilePhotoPath)
+{
+    std::unique_ptr<User> account;
+
+    if (role == "Listener")
+    {
+        account = std::make_unique<Listener>(
+            0,
+            username,
+            password,
+            fullName,
+            biography,
+            role,
+            profilePhotoPath);
+    }
+    else if (role == "Artist")
+    {
+        account = std::make_unique<Artist>(
+            0,
+            username,
+            password,
+            fullName,
+            biography,
+            role,
+            profilePhotoPath);
+    }
+    else
+    {
+        account = std::make_unique<User>(
+            0,
+            username,
+            password,
+            fullName,
+            biography,
+            role,
+            profilePhotoPath);
+    }
+
+    return repo.save(std::move(account));
+}
 
 User* AccountManager::Login(std::string username, std::string password)
 {
-    User* b = repo.searchByUserName(username);
-    if (!b) {
+    User* user = repo.searchByUserName(username);
+
+    if (user == nullptr)
+    {
         return nullptr;
     }
 
-    if (b->getPassword() == password) {
-        return b;
+    if (user->getPassword() == password)
+    {
+        return user;
     }
 
     return nullptr;
 }
 
-
-
-void AccountManager::editAccount(const std::string& username,
-                                 const std::string& newUsername,
-                                 const std::string& newPassword)
+void AccountManager::editAccount(
+    const std::string& username,
+    const std::string& newUsername,
+    const std::string& newPassword)
 {
     User* user = repo.searchByUserName(username);
-    if (!user) {
+
+    if (user == nullptr)
+    {
         return;
     }
 
@@ -42,13 +90,14 @@ void AccountManager::editAccount(const std::string& username,
     user->setPassword(newPassword);
 }
 
-void AccountManager::deleteAccount(const std::string &username)
+void AccountManager::deleteAccount(const std::string& username)
 {
-    User* b=repo.searchByUserName(username);
-    if(b)
-    {
-        repo.remove(b->getId());
-    }
-    else{return;}
+    User* user = repo.searchByUserName(username);
 
+    if (user == nullptr)
+    {
+        return;
+    }
+
+    repo.remove(user->getId());
 }

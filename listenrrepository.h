@@ -3,13 +3,16 @@
 
 #include "accountrepository.h"
 
-class listenrRepository : public AccountRepository
+class listenrRepository
 {
+private:
+    AccountRepository& accountRepository;
+
 public:
-    listenrRepository();
+    listenrRepository(AccountRepository& accountRepository);
 
+    User* search(int id) const;
     void updatedLike(int listenerId, int songId, bool liked);
-
     bool isLiked(int listenerId, int songId) const;
 };
 
