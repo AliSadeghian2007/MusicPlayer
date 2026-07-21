@@ -1,7 +1,7 @@
 CMakeFiles/MusicPlayer.dir/artist.cpp.obj: \
- F:\Project\C++\Project\MusicPlayer\artist.cpp \
- F:\Project\C++\Project\MusicPlayer\artist.h \
- F:\Project\C++\Project\MusicPlayer\user.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artist.cpp \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artist.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\user.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

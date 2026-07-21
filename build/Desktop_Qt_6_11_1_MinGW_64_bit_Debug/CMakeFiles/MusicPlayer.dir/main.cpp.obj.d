@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/main.cpp.obj: \
- F:\Project\C++\Project\MusicPlayer\main.cpp \
- F:\Project\C++\Project\MusicPlayer\mainwindow.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\main.cpp \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\mainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -400,19 +400,19 @@ CMakeFiles/MusicPlayer.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication_platform.h \
- F:\Project\C++\Project\MusicPlayer\accountrepository.h \
- F:\Project\C++\Project\MusicPlayer\abstractrepository.h \
- F:\Project\C++\Project\MusicPlayer\user.h \
- F:\Project\C++\Project\MusicPlayer\artistrepository.h \
- F:\Project\C++\Project\MusicPlayer\artist.h \
- F:\Project\C++\Project\MusicPlayer\listenrrepository.h \
- F:\Project\C++\Project\MusicPlayer\albumrepository.h \
- F:\Project\C++\Project\MusicPlayer\album.h \
- F:\Project\C++\Project\MusicPlayer\songrepository.h \
- F:\Project\C++\Project\MusicPlayer\song.h \
- F:\Project\C++\Project\MusicPlayer\playlistrepository.h \
- F:\Project\C++\Project\MusicPlayer\playlist.h \
- F:\Project\C++\Project\MusicPlayer\accountmanager.h \
- F:\Project\C++\Project\MusicPlayer\artistmanager.h \
- F:\Project\C++\Project\MusicPlayer\listenermanager.h \
- F:\Project\C++\Project\MusicPlayer\sharedfeaturesmanager.h
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\accountrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\abstractrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\user.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artistrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artist.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\listenrrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\albumrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\album.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\songrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\song.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\playlistrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\playlist.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\accountmanager.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artistmanager.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\listenermanager.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\sharedfeaturesmanager.h

@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj: \
- F:\Project\C++\Project\MusicPlayer\artistrepository.cpp \
- F:\Project\C++\Project\MusicPlayer\artistrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artistrepository.cpp \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artistrepository.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -61,7 +61,7 @@ CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
- F:\Project\C++\Project\MusicPlayer\accountrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\accountrepository.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
@@ -117,7 +117,7 @@ CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- F:\Project\C++\Project\MusicPlayer\abstractrepository.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\abstractrepository.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
@@ -145,5 +145,5 @@ CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
- F:\Project\C++\Project\MusicPlayer\user.h \
- F:\Project\C++\Project\MusicPlayer\artist.h
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\user.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artist.h

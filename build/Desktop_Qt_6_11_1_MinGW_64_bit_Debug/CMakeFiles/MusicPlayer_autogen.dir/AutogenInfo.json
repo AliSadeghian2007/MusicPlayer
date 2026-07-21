@@ -1,20 +1,73 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen",
-	"CMAKE_BINARY_DIR" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "F:/Project/C++/Project/MusicPlayer",
+	"BUILD_DIR" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen",
+	"CMAKE_BINARY_DIR" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"F:/Project/C++/Project/MusicPlayer/CMakeLists.txt",
-		"F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake",
-		"F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/package-manager.cmake",
-		"F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
-		"F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
+		"F:/Project/C++/(( PROJECT  ))/MusicPlayer/CMakeLists.txt",
+		"F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake",
+		"F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/package-manager.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystem.cmake.in",
+		"F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeMinGWFindMake.cmake",
+		"F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake",
-		"F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-Determine-CXX.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GNU-FindBinUtils.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in",
+		"F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake",
@@ -27,11 +80,27 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake",
-		"F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineRCCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeRCCompiler.cmake.in",
+		"F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeRCInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in",
+		"F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
 		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake",
 		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake",
 		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
@@ -371,124 +440,124 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/windows/app.exe.manifest.in"
 	],
-	"CMAKE_SOURCE_DIR" : "F:/Project/C++/Project/MusicPlayer",
+	"CMAKE_SOURCE_DIR" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/deps",
+	"DEP_FILE" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "MusicPlayer_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"F:/Project/C++/Project/MusicPlayer/abstractrepository.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/abstractrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_abstractrepository.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/accountmanager.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/accountmanager.h",
 			"MU",
 			"EWIEGA46WW/moc_accountmanager.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/accountrepository.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/accountrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_accountrepository.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/album.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/album.h",
 			"MU",
 			"EWIEGA46WW/moc_album.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/albumrepository.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/albumrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_albumrepository.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/artist.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/artist.h",
 			"MU",
 			"EWIEGA46WW/moc_artist.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/artistmanager.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/artistmanager.h",
 			"MU",
 			"EWIEGA46WW/moc_artistmanager.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/artistrepository.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/artistrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_artistrepository.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/listener.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/listener.h",
 			"MU",
 			"EWIEGA46WW/moc_listener.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/listenermanager.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/listenermanager.h",
 			"MU",
 			"EWIEGA46WW/moc_listenermanager.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/listenrrepository.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/listenrrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_listenrrepository.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/mainwindow.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/playlist.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/playlist.h",
 			"MU",
 			"EWIEGA46WW/moc_playlist.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/playlistrepository.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/playlistrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_playlistrepository.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/sharedfeaturesmanager.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/sharedfeaturesmanager.h",
 			"MU",
 			"EWIEGA46WW/moc_sharedfeaturesmanager.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/song.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/song.h",
 			"MU",
 			"EWIEGA46WW/moc_song.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/songrepository.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/songrepository.h",
 			"MU",
 			"EWIEGA46WW/moc_songrepository.cpp",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/user.h",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/user.h",
 			"MU",
 			"EWIEGA46WW/moc_user.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/include",
-	"MOC_COMPILATION_FILE" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/include",
+	"MOC_COMPILATION_FILE" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
@@ -544,58 +613,86 @@
 		"-c",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/MusicPlayer_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/MusicPlayer_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.11.1/mingw_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.11.1/mingw_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 11,
-	"SETTINGS_FILE" : "F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/MusicPlayer_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/MusicPlayer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"F:/Project/C++/Project/MusicPlayer/abstractrepository.cpp",
-			"MU",
-			null
-		],
-		[ "F:/Project/C++/Project/MusicPlayer/accountmanager.cpp", "MU", null ],
-		[
-			"F:/Project/C++/Project/MusicPlayer/accountrepository.cpp",
-			"MU",
-			null
-		],
-		[ "F:/Project/C++/Project/MusicPlayer/album.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/albumrepository.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/artist.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/artistmanager.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/artistrepository.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/listener.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/listenermanager.cpp", "MU", null ],
-		[
-			"F:/Project/C++/Project/MusicPlayer/listenrrepository.cpp",
-			"MU",
-			null
-		],
-		[ "F:/Project/C++/Project/MusicPlayer/main.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/mainwindow.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/playlist.cpp", "MU", null ],
-		[
-			"F:/Project/C++/Project/MusicPlayer/playlistrepository.cpp",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/abstractrepository.cpp",
 			"MU",
 			null
 		],
 		[
-			"F:/Project/C++/Project/MusicPlayer/sharedfeaturesmanager.cpp",
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/accountmanager.cpp",
 			"MU",
 			null
 		],
-		[ "F:/Project/C++/Project/MusicPlayer/song.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/songrepository.cpp", "MU", null ],
-		[ "F:/Project/C++/Project/MusicPlayer/user.cpp", "MU", null ]
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/accountrepository.cpp",
+			"MU",
+			null
+		],
+		[ "F:/Project/C++/(( PROJECT  ))/MusicPlayer/album.cpp", "MU", null ],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/albumrepository.cpp",
+			"MU",
+			null
+		],
+		[ "F:/Project/C++/(( PROJECT  ))/MusicPlayer/artist.cpp", "MU", null ],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/artistmanager.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/artistrepository.cpp",
+			"MU",
+			null
+		],
+		[ "F:/Project/C++/(( PROJECT  ))/MusicPlayer/listener.cpp", "MU", null ],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/listenermanager.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/listenrrepository.cpp",
+			"MU",
+			null
+		],
+		[ "F:/Project/C++/(( PROJECT  ))/MusicPlayer/main.cpp", "MU", null ],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[ "F:/Project/C++/(( PROJECT  ))/MusicPlayer/playlist.cpp", "MU", null ],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/playlistrepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/sharedfeaturesmanager.cpp",
+			"MU",
+			null
+		],
+		[ "F:/Project/C++/(( PROJECT  ))/MusicPlayer/song.cpp", "MU", null ],
+		[
+			"F:/Project/C++/(( PROJECT  ))/MusicPlayer/songrepository.cpp",
+			"MU",
+			null
+		],
+		[ "F:/Project/C++/(( PROJECT  ))/MusicPlayer/user.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

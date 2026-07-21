@@ -1,5 +1,5 @@
-F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/EWIEGA46WW/moc_mainwindow.cpp: F:/Project/C++/Project/MusicPlayer/mainwindow.h \
-  F:/Project/C++/Project/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/moc_predefs.h \
+F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/EWIEGA46WW/moc_mainwindow.cpp: F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/mainwindow.h \
+  F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/moc_predefs.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \

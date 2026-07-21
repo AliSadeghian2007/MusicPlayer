@@ -1,7 +1,7 @@
 CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
- F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\mocs_compilation.cpp \
- F:\Project\C++\Project\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- F:/Project/C++/Project/MusicPlayer/mainwindow.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\mocs_compilation.cpp \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/mainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

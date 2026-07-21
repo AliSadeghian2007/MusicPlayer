@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/album.cpp.obj: \
- F:\Project\C++\Project\MusicPlayer\album.cpp \
- F:\Project\C++\Project\MusicPlayer\album.h \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\album.cpp \
+ F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\album.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
