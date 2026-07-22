@@ -56,10 +56,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "F:\Project\C++\(( PROJECT  ))\MusicPlayer"
+CMAKE_SOURCE_DIR = F:\Project\Cpp\MyCppProjects\MusicPlayer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "F:\Project\C++\(( PROJECT  ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+CMAKE_BINARY_DIR = F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "F:\Project\C++\(( PROJECT  ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" "F:\Project\C++\(( PROJECT  ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "F:\Project\C++\(( PROJECT  ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -414,6 +414,30 @@ artistrepository.s: artistrepository.cpp.s
 artistrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artistrepository.cpp.s
 .PHONY : artistrepository.cpp.s
+
+dialog.obj: dialog.cpp.obj
+.PHONY : dialog.obj
+
+# target to build an object file
+dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/dialog.cpp.obj
+.PHONY : dialog.cpp.obj
+
+dialog.i: dialog.cpp.i
+.PHONY : dialog.i
+
+# target to preprocess a source file
+dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/dialog.cpp.i
+.PHONY : dialog.cpp.i
+
+dialog.s: dialog.cpp.s
+.PHONY : dialog.s
+
+# target to generate assembly for a file
+dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/dialog.cpp.s
+.PHONY : dialog.cpp.s
 
 listener.obj: listener.cpp.obj
 .PHONY : listener.obj
@@ -721,6 +745,9 @@ help:
 	@echo ... artistrepository.obj
 	@echo ... artistrepository.i
 	@echo ... artistrepository.s
+	@echo ... dialog.obj
+	@echo ... dialog.i
+	@echo ... dialog.s
 	@echo ... listener.obj
 	@echo ... listener.i
 	@echo ... listener.s

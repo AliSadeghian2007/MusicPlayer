@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/main.cpp.obj: \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\main.cpp \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\mainwindow.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\main.cpp \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\mainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -386,6 +386,10 @@ CMakeFiles/MusicPlayer.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabwidget.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\accountmanager.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\accountrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\abstractrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\user.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreapplication.h \
@@ -400,19 +404,15 @@ CMakeFiles/MusicPlayer.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication_platform.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\accountrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\abstractrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\user.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artistrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artist.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\listenrrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\albumrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\album.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\songrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\song.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\playlistrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\playlist.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\accountmanager.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artistmanager.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\listenermanager.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\sharedfeaturesmanager.h
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\artistrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\artist.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\listenrrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\albumrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\album.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\songrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\song.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\playlistrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\playlist.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\artistmanager.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\listenermanager.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\sharedfeaturesmanager.h

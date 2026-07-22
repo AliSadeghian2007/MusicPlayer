@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "accountmanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -14,10 +15,15 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
-    ~MainWindow() override;
+    explicit MainWindow(AccountManager *manager, QWidget *parent = nullptr);
+    ~MainWindow();
+
+private slots:
+    void on_registerButton_clicked();
 
 private:
     Ui::MainWindow *ui;
+    AccountManager *accountManager;
 };
-#endif // MAINWINDOW_H
+
+#endif

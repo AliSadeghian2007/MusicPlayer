@@ -1,5 +1,5 @@
-F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/EWIEGA46WW/moc_mainwindow.cpp: F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/mainwindow.h \
-  F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/moc_predefs.h \
+F:/Project/Cpp/MyCppProjects/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/EWIEGA46WW/moc_mainwindow.cpp: F:/Project/Cpp/MyCppProjects/MusicPlayer/mainwindow.h \
+  F:/Project/Cpp/MyCppProjects/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/moc_predefs.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \
@@ -374,4 +374,8 @@ F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bi
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  F:/Project/Cpp/MyCppProjects/MusicPlayer/abstractrepository.h \
+  F:/Project/Cpp/MyCppProjects/MusicPlayer/accountmanager.h \
+  F:/Project/Cpp/MyCppProjects/MusicPlayer/accountrepository.h \
+  F:/Project/Cpp/MyCppProjects/MusicPlayer/user.h

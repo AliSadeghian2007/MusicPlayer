@@ -28,6 +28,8 @@ qt_add_executable(MusicPlayer
     sharedfeaturesmanager.h sharedfeaturesmanager.cpp
     artistmanager.h artistmanager.cpp
     listenermanager.h listenermanager.cpp
+    dialog.h dialog.cpp dialog.ui
+
 )
 
 target_link_libraries(MusicPlayer

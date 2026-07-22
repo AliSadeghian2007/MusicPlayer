@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-
 #include <QApplication>
 
 #include "accountrepository.h"
@@ -40,8 +39,9 @@ int main(int argc, char *argv[])
                                                 playlistRepository,
                                                 accountRepository);
 
-    MainWindow w;
+    MainWindow w(&accountManager);
     w.show();
 
-    return QApplication::exec();
+    return a.exec();
 }
+

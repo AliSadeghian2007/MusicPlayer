@@ -1,7 +1,7 @@
 CMakeFiles/MusicPlayer.dir/albumrepository.cpp.obj: \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\albumrepository.cpp \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\albumrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\album.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\albumrepository.cpp \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\albumrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\album.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -99,7 +99,7 @@ CMakeFiles/MusicPlayer.dir/albumrepository.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\abstractrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\abstractrepository.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \

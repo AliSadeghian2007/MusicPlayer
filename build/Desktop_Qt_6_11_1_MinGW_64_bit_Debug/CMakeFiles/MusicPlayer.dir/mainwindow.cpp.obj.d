@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj: \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\mainwindow.cpp \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\mainwindow.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\mainwindow.cpp \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\mainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -386,7 +386,11 @@ CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabwidget.h \
- F:/Project/C++/((\ PROJECT\ \ ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/include/ui_mainwindow.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\accountmanager.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\accountrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\abstractrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\user.h \
+ F:/Project/Cpp/MyCppProjects/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer_autogen/include/ui_mainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qapplication.h \
@@ -426,4 +430,10 @@ CMakeFiles/MusicPlayer.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QSpacerItem \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QVBoxLayout \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\dialog.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMessageBox \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmessagebox.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h

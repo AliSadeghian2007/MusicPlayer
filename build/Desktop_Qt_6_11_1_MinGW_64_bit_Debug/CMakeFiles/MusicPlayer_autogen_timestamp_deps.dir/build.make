@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "F:\Project\C++\(( PROJECT  ))\MusicPlayer"
+CMAKE_SOURCE_DIR = F:\Project\Cpp\MyCppProjects\MusicPlayer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "F:\Project\C++\(( PROJECT  ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+CMAKE_BINARY_DIR = F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug
 
 # Utility rule file for MusicPlayer_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "F:\Project\C++\(( PROJECT  ))\MusicPlayer" "F:\Project\C++\(( PROJECT  ))\MusicPlayer" "F:\Project\C++\(( PROJECT  ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug" "F:\Project\C++\(( PROJECT  ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug" "F:\Project\C++\(( PROJECT  ))\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\MusicPlayer_autogen_timestamp_deps.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\Project\Cpp\MyCppProjects\MusicPlayer F:\Project\Cpp\MyCppProjects\MusicPlayer F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\MusicPlayer_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir/depend
 

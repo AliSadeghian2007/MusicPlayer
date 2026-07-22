@@ -41,7 +41,7 @@ public:
     QLabel *label_3;
     QLineEdit *lineEdit_2;
     QHBoxLayout *horizontalLayout_2;
-    QPushButton *pushButton;
+    QPushButton *registerButton;
     QPushButton *pushButton_2;
     QSpacerItem *horizontalSpacer_2;
     QSpacerItem *verticalSpacer_2;
@@ -50,7 +50,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
+        MainWindow->resize(887, 631);
         MainWindow->setMinimumSize(QSize(0, 0));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
@@ -110,6 +110,7 @@ public:
         lineEdit_2 = new QLineEdit(contentBox);
         lineEdit_2->setObjectName("lineEdit_2");
         lineEdit_2->setMinimumSize(QSize(300, 0));
+        lineEdit_2->setEchoMode(QLineEdit::EchoMode::Password);
 
         horizontalLayout_3->addWidget(lineEdit_2);
 
@@ -119,10 +120,10 @@ public:
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(100);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        pushButton = new QPushButton(contentBox);
-        pushButton->setObjectName("pushButton");
+        registerButton = new QPushButton(contentBox);
+        registerButton->setObjectName("registerButton");
 
-        horizontalLayout_2->addWidget(pushButton);
+        horizontalLayout_2->addWidget(registerButton);
 
         pushButton_2 = new QPushButton(contentBox);
         pushButton_2->setObjectName("pushButton_2");
@@ -147,12 +148,6 @@ public:
         verticalLayout->addItem(verticalSpacer_2);
 
         MainWindow->setCentralWidget(centralwidget);
-        label_2->raise();
-        label_3->raise();
-        lineEdit->raise();
-        lineEdit_2->raise();
-        pushButton->raise();
-        pushButton_2->raise();
         container->raise();
 
         retranslateUi(MainWindow);
@@ -166,7 +161,7 @@ public:
         label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:26pt;\">Music Player</span></p></body></html>", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt;\">Username :</span></p></body></html>", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt;\">Password :</span></p></body></html>", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
+        registerButton->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
     } // retranslateUi
 

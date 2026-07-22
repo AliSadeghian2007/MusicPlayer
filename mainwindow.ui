@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>887</width>
+    <height>631</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -112,6 +112,9 @@
                 <height>0</height>
                </size>
               </property>
+              <property name="echoMode">
+               <enum>QLineEdit::EchoMode::Password</enum>
+              </property>
              </widget>
             </item>
            </layout>
@@ -122,7 +125,7 @@
              <number>100</number>
             </property>
             <item>
-             <widget class="QPushButton" name="pushButton">
+             <widget class="QPushButton" name="registerButton">
               <property name="text">
                <string>Register</string>
               </property>
@@ -170,24 +173,6 @@
      </spacer>
     </item>
    </layout>
-   <zorder>widget</zorder>
-   <zorder>title_label</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>lineEdit_2</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>horizontalSpacer</zorder>
-   <zorder>horizontalSpacer_2</zorder>
-   <zorder>horizontalSpacer_3</zorder>
-   <zorder>logiFrame</zorder>
-   <zorder>horizontalSpacer_left
-</zorder>
-   <zorder>horizontalSpacer_right
-</zorder>
-   <zorder>verticalSpacer</zorder>
-   <zorder>verticalSpacer_2</zorder>
    <zorder>container</zorder>
    <zorder>verticalSpacer</zorder>
    <zorder>verticalSpacer_2</zorder>

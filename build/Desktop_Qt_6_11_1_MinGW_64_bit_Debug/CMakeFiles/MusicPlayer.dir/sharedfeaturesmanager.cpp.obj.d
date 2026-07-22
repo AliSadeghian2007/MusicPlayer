@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/sharedfeaturesmanager.cpp.obj: \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\sharedfeaturesmanager.cpp \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\sharedfeaturesmanager.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\sharedfeaturesmanager.cpp \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\sharedfeaturesmanager.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -103,12 +103,12 @@ CMakeFiles/MusicPlayer.dir/sharedfeaturesmanager.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\song.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\album.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\playlist.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\artist.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\user.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\songrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\song.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\album.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\playlist.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\artist.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\user.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\songrepository.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
@@ -149,10 +149,10 @@ CMakeFiles/MusicPlayer.dir/sharedfeaturesmanager.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\abstractrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\albumrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\playlistrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\accountrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\abstractrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\albumrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\playlistrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\accountrepository.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \

@@ -1,4 +1,4 @@
-# Install script for directory: F:/Project/C++/(( PROJECT  ))/MusicPlayer
+# Install script for directory: F:/Project/Cpp/MyCppProjects/MusicPlayer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "F:/Project/Cpp/MyCppProjects/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/MusicPlayer.exe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MusicPlayer.exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MusicPlayer.exe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -48,7 +48,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qt/deploy_MusicPlayer_9bac53ae95.cmake")
+  include("F:/Project/Cpp/MyCppProjects/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qt/deploy_MusicPlayer_9bac53ae95.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -66,6 +66,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "F:/Project/C++/(( PROJECT  ))/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "F:/Project/Cpp/MyCppProjects/MusicPlayer/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

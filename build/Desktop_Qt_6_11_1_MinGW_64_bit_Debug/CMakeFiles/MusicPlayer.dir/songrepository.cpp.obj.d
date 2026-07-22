@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/songrepository.cpp.obj: \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\songrepository.cpp \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\songrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\songrepository.cpp \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\songrepository.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -116,8 +116,8 @@ CMakeFiles/MusicPlayer.dir/songrepository.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\abstractrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\song.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\abstractrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\song.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
@@ -145,9 +145,9 @@ CMakeFiles/MusicPlayer.dir/songrepository.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\listenrrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\accountrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\user.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\playlist.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\playlistrepository.h \
- F:\Project\C++\((\ PROJECT\ \ ))\MusicPlayer\listener.h
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\listenrrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\accountrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\user.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\playlist.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\playlistrepository.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\listener.h

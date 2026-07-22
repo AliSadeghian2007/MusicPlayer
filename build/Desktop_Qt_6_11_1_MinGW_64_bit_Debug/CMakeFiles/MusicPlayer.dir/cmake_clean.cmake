@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MusicPlayer.dir/artistmanager.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/artistrepository.cpp.obj.d"
+  "CMakeFiles/MusicPlayer.dir/dialog.cpp.obj"
+  "CMakeFiles/MusicPlayer.dir/dialog.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/listener.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/listener.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/listenermanager.cpp.obj"
