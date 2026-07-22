@@ -2,12 +2,12 @@
 F:/Project/Cpp/MyCppProjects/MusicPlayer/abstractrepository.h
 F:/Project/Cpp/MyCppProjects/MusicPlayer/accountmanager.h
 F:/Project/Cpp/MyCppProjects/MusicPlayer/accountrepository.h
-F:/Project/Cpp/MyCppProjects/MusicPlayer/album.h
-F:/Project/Cpp/MyCppProjects/MusicPlayer/albumrepository.h
 F:/Project/Cpp/MyCppProjects/MusicPlayer/songrepository.h
 F:/Project/Cpp/MyCppProjects/MusicPlayer/song.h
 F:/Project/Cpp/MyCppProjects/MusicPlayer/listenrrepository.h
 F:/Project/Cpp/MyCppProjects/MusicPlayer/listenermanager.h
+F:/Project/Cpp/MyCppProjects/MusicPlayer/album.h
+F:/Project/Cpp/MyCppProjects/MusicPlayer/albumrepository.h
 F:/Project/Cpp/MyCppProjects/MusicPlayer/artist.h
 F:/Project/Cpp/MyCppProjects/MusicPlayer/main.cpp
 F:/Project/Cpp/MyCppProjects/MusicPlayer/artistmanager.h

@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     AccountRepository accountRepository;
+    accountRepository.loadFromFile("accounts.txt");
 
     ArtistRepository artistRepository(accountRepository);
     listenrRepository listenerRepository(accountRepository);
@@ -41,6 +42,8 @@ int main(int argc, char *argv[])
 
     MainWindow w(&accountManager);
     w.show();
+
+   accountRepository.saveToFile("accounts.txt");
 
     return a.exec();
 }

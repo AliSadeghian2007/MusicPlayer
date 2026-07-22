@@ -28,6 +28,10 @@ public:
                      const std::string& newPassword);
 
     void deleteAccount(const std::string& username);
+
+    bool usernameExists(const std::string& username) const;
+    bool passwordExists(const std::string& password) const;
+
 };
 
 #endif // ACCOUNTMANAGER_H

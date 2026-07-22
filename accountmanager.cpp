@@ -54,7 +54,15 @@ bool AccountManager::registerAccount(
             profilePhotoPath);
     }
 
-    return repo.save(std::move(account));
+    bool success = repo.save(std::move(account));
+
+    if (success)
+    {
+        repo.saveToFile("accounts.txt");
+    }
+
+    return success;
+
 }
 
 User* AccountManager::Login(std::string username, std::string password)
@@ -101,3 +109,26 @@ void AccountManager::deleteAccount(const std::string& username)
 
     repo.remove(user->getId());
 }
+
+
+
+bool AccountManager::usernameExists(const std::string& username) const
+{
+    return repo.searchByUserName(username) != nullptr;
+}
+
+bool AccountManager::passwordExists(const std::string& password) const
+{
+    const std::vector<std::unique_ptr<User>>& users = repo.getUsers();
+
+    for (int i = 0; i < users.size(); i++)
+    {
+        if (users[i]->getPassword() == password)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+

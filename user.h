@@ -13,9 +13,14 @@ public:
 
     virtual ~User() = default;
 
-    std::string getPassword(){return password;}
+
     int getId() const { return id; }
-    std::string getUserName() const { return username; }
+    std::string getPassword() const{return password;}
+    std::string getFullName() const{return fullName;}
+    std::string getBiography() const{return biography;}
+    std::string getRole() const{return role;}
+    std::string getProfilePhotoPath() const{return profilePhotoPath;}
+    std::string getUserName() const {return username;}
 
     void setId(int id) { this->id = id; }
     void setUserName(const std::string& username) { this->username = username; }

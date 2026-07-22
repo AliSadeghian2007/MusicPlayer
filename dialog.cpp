@@ -38,6 +38,7 @@ void Dialog::on_submitRegisterButton_clicked()
         return;
     }
 
+
     std::string stdUsername = username.toStdString();
     std::string stdPassword = password.toStdString();
     std::string stdFullName = fullName.toStdString();
@@ -45,7 +46,20 @@ void Dialog::on_submitRegisterButton_clicked()
     std::string stdRole = role.toStdString();
     std::string stdProfilePhoto = "";
 
+    if (accountManager->usernameExists(stdUsername))
+    {
+        QMessageBox::critical(this, "Registration Error", "This username has already been selected.");
+        return;
+    }
+
+    if (accountManager->passwordExists(stdPassword))
+    {
+        QMessageBox::critical(this, "Registration Error", "This password has already been selected.");
+        return;
+    }
+
     try {
+
         bool success = accountManager->registerAccount(stdUsername, stdPassword, stdFullName, stdBiography, stdRole, stdProfilePhoto);
 
         if (success) {
