@@ -54,7 +54,15 @@ bool AccountManager::registerAccount(
             profilePhotoPath);
     }
 
-    return repo.save(std::move(account));
+    bool success = repo.save(std::move(account));
+
+    if (success)
+    {
+        repo.saveToFile("accounts.txt");
+    }
+
+    return success;
+
 }
 
 User* AccountManager::Login(std::string username, std::string password)

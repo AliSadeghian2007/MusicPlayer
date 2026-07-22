@@ -27,6 +27,11 @@ public:
 
 
     User* searchByUserName(const std::string& name)const;
+
+
+
+    bool loadFromFile(const std::string& path);
+    bool saveToFile(const std::string& path) const;
 };
 
 #endif // ACCOUNTREPOSITORY_H
