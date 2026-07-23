@@ -1,9 +1,9 @@
 CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\mocs_compilation.cpp \
- F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\EWIEGA46WW/moc_dialog.cpp \
- F:/Project/Cpp/MyCppProjects/MusicPlayer/dialog.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\EWIEGA46WW/moc_artistwindow.cpp \
+ F:/Project/Cpp/MyCppProjects/MusicPlayer/artistwindow.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qglobal.h \
@@ -386,6 +386,14 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qtmochelpers.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qtmocconstants.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/q20algorithm.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\EWIEGA46WW/moc_dialog.cpp \
+ F:/Project/Cpp/MyCppProjects/MusicPlayer/dialog.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMessageBox \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmessagebox.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
@@ -393,11 +401,7 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  F:/Project/Cpp/MyCppProjects/MusicPlayer/accountrepository.h \
  F:/Project/Cpp/MyCppProjects/MusicPlayer/abstractrepository.h \
  F:/Project/Cpp/MyCppProjects/MusicPlayer/user.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qtmochelpers.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qtmocconstants.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/q20algorithm.h \
+ F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\EWIEGA46WW/moc_listenerwindow.cpp \
+ F:/Project/Cpp/MyCppProjects/MusicPlayer/listenerwindow.h \
  F:\Project\Cpp\MyCppProjects\MusicPlayer\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\MusicPlayer_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- F:/Project/Cpp/MyCppProjects/MusicPlayer/mainwindow.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabwidget.h
+ F:/Project/Cpp/MyCppProjects/MusicPlayer/mainwindow.h

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MusicPlayer_autogen"
+  "MusicPlayer_autogen/include/ui_artistwindow.h"
   "MusicPlayer_autogen/include/ui_dialog.h"
+  "MusicPlayer_autogen/include/ui_listenerwindow.h"
   "MusicPlayer_autogen/include/ui_mainwindow.h"
   "MusicPlayer_autogen/mocs_compilation.cpp"
   "MusicPlayer_autogen/timestamp"

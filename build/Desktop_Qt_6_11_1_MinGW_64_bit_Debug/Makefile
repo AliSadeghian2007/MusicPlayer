@@ -415,6 +415,30 @@ artistrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artistrepository.cpp.s
 .PHONY : artistrepository.cpp.s
 
+artistwindow.obj: artistwindow.cpp.obj
+.PHONY : artistwindow.obj
+
+# target to build an object file
+artistwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artistwindow.cpp.obj
+.PHONY : artistwindow.cpp.obj
+
+artistwindow.i: artistwindow.cpp.i
+.PHONY : artistwindow.i
+
+# target to preprocess a source file
+artistwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artistwindow.cpp.i
+.PHONY : artistwindow.cpp.i
+
+artistwindow.s: artistwindow.cpp.s
+.PHONY : artistwindow.s
+
+# target to generate assembly for a file
+artistwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/artistwindow.cpp.s
+.PHONY : artistwindow.cpp.s
+
 dialog.obj: dialog.cpp.obj
 .PHONY : dialog.obj
 
@@ -486,6 +510,30 @@ listenermanager.s: listenermanager.cpp.s
 listenermanager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenermanager.cpp.s
 .PHONY : listenermanager.cpp.s
+
+listenerwindow.obj: listenerwindow.cpp.obj
+.PHONY : listenerwindow.obj
+
+# target to build an object file
+listenerwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenerwindow.cpp.obj
+.PHONY : listenerwindow.cpp.obj
+
+listenerwindow.i: listenerwindow.cpp.i
+.PHONY : listenerwindow.i
+
+# target to preprocess a source file
+listenerwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenerwindow.cpp.i
+.PHONY : listenerwindow.cpp.i
+
+listenerwindow.s: listenerwindow.cpp.s
+.PHONY : listenerwindow.s
+
+# target to generate assembly for a file
+listenerwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/listenerwindow.cpp.s
+.PHONY : listenerwindow.cpp.s
 
 listenrrepository.obj: listenrrepository.cpp.obj
 .PHONY : listenrrepository.obj
@@ -745,6 +793,9 @@ help:
 	@echo ... artistrepository.obj
 	@echo ... artistrepository.i
 	@echo ... artistrepository.s
+	@echo ... artistwindow.obj
+	@echo ... artistwindow.i
+	@echo ... artistwindow.s
 	@echo ... dialog.obj
 	@echo ... dialog.i
 	@echo ... dialog.s
@@ -754,6 +805,9 @@ help:
 	@echo ... listenermanager.obj
 	@echo ... listenermanager.i
 	@echo ... listenermanager.s
+	@echo ... listenerwindow.obj
+	@echo ... listenerwindow.i
+	@echo ... listenerwindow.s
 	@echo ... listenrrepository.obj
 	@echo ... listenrrepository.i
 	@echo ... listenrrepository.s
