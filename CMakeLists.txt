@@ -31,6 +31,8 @@ qt_add_executable(MusicPlayer
     dialog.h dialog.cpp dialog.ui
     artistwindow.h artistwindow.cpp artistwindow.ui
     listenerwindow.h listenerwindow.cpp listenerwindow.ui
+    addalbumdialog.h addalbumdialog.cpp addalbumdialog.ui
+    addsongdialog.h addsongdialog.cpp addsongdialog.ui
 
 
 )

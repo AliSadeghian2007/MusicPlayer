@@ -268,3 +268,4 @@ std::vector<Song*> ArtistManager::getAlbumSongs(int artistId, int albumId) const
     return result;
 }
 
+

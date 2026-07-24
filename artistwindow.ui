@@ -24,7 +24,6 @@
     background-color: #f4f4f4;
 }</string>
   </property>
-
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="mainVerticalLayout">
     <property name="spacing">
@@ -42,7 +41,6 @@
     <property name="bottomMargin">
      <number>10</number>
     </property>
-
     <item>
      <widget class="QWidget" name="headerWidget" native="true">
       <property name="sizePolicy">
@@ -68,7 +66,6 @@
     background-color: transparent;
 }</string>
       </property>
-
       <layout class="QHBoxLayout" name="headerLayout">
        <property name="spacing">
         <number>12</number>
@@ -85,7 +82,6 @@
        <property name="bottomMargin">
         <number>10</number>
        </property>
-
        <item>
         <widget class="QLabel" name="profilePhotoLabel">
          <property name="sizePolicy">
@@ -124,7 +120,6 @@
          </property>
         </widget>
        </item>
-
        <item>
         <widget class="QLabel" name="welcomeLabel">
          <property name="sizePolicy">
@@ -155,7 +150,6 @@
          </property>
         </widget>
        </item>
-
        <item>
         <spacer name="headerHorizontalSpacer">
          <property name="orientation">
@@ -175,7 +169,6 @@
       </layout>
      </widget>
     </item>
-
     <item>
      <widget class="QFrame" name="albumsFrame">
       <property name="sizePolicy">
@@ -203,7 +196,6 @@
       <property name="frameShadow">
        <enum>QFrame::Shadow::Plain</enum>
       </property>
-
       <layout class="QVBoxLayout" name="albumsFrameLayout">
        <property name="spacing">
         <number>0</number>
@@ -220,7 +212,6 @@
        <property name="bottomMargin">
         <number>8</number>
        </property>
-
        <item>
         <widget class="QScrollArea" name="albumsScrollArea">
          <property name="sizePolicy">
@@ -271,23 +262,22 @@ QScrollArea#albumsScrollArea QScrollBar::sub-page:vertical {
          <property name="frameShape">
           <enum>QFrame::Shape::NoFrame</enum>
          </property>
-         <property name="horizontalScrollBarPolicy">
-          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
-         </property>
          <property name="verticalScrollBarPolicy">
           <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
          </property>
          <property name="widgetResizable">
           <bool>true</bool>
          </property>
-
          <widget class="QWidget" name="albumsContainerWidget">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>848</width>
-            <height>432</height>
+            <width>852</width>
+            <height>396</height>
            </rect>
           </property>
           <property name="sizePolicy">
@@ -301,13 +291,12 @@ QScrollArea#albumsScrollArea QScrollBar::sub-page:vertical {
     background-color: transparent;
 }</string>
           </property>
-
           <layout class="QVBoxLayout" name="albumsContainerLayout">
-           <property name="sizeConstraint">
-            <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
-           </property>
            <property name="spacing">
             <number>8</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
            </property>
            <property name="leftMargin">
             <number>10</number>
@@ -321,7 +310,6 @@ QScrollArea#albumsScrollArea QScrollBar::sub-page:vertical {
            <property name="bottomMargin">
             <number>10</number>
            </property>
-
            <item>
             <widget class="QLabel" name="emptyAlbumsLabel">
              <property name="sizePolicy">
@@ -355,7 +343,6 @@ QScrollArea#albumsScrollArea QScrollBar::sub-page:vertical {
              </property>
             </widget>
            </item>
-
            <item>
             <spacer name="albumsVerticalSpacer">
              <property name="orientation">
@@ -379,7 +366,6 @@ QScrollArea#albumsScrollArea QScrollBar::sub-page:vertical {
       </layout>
      </widget>
     </item>
-
     <item>
      <widget class="QWidget" name="bottomBarWidget" native="true">
       <property name="sizePolicy">
@@ -437,7 +423,6 @@ QToolButton#logoutButton {
     color: #b3261e;
 }</string>
       </property>
-
       <layout class="QHBoxLayout" name="bottomBarLayout">
        <property name="spacing">
         <number>8</number>
@@ -454,7 +439,6 @@ QToolButton#logoutButton {
        <property name="bottomMargin">
         <number>5</number>
        </property>
-
        <item>
         <widget class="QWidget" name="leftBalanceWidget" native="true">
          <property name="sizePolicy">
@@ -477,7 +461,6 @@ QToolButton#logoutButton {
          </property>
         </widget>
        </item>
-
        <item>
         <spacer name="leftBottomSpacer">
          <property name="orientation">
@@ -494,7 +477,6 @@ QToolButton#logoutButton {
          </property>
         </spacer>
        </item>
-
        <item>
         <widget class="QWidget" name="albumActionsWidget" native="true">
          <property name="sizePolicy">
@@ -515,7 +497,6 @@ QToolButton#logoutButton {
            <height>52</height>
           </size>
          </property>
-
          <layout class="QHBoxLayout" name="albumActionsLayout">
           <property name="spacing">
            <number>8</number>
@@ -532,7 +513,6 @@ QToolButton#logoutButton {
           <property name="bottomMargin">
            <number>0</number>
           </property>
-
           <item>
            <widget class="QToolButton" name="addAlbumButton">
             <property name="sizePolicy">
@@ -567,7 +547,6 @@ QToolButton#logoutButton {
             </property>
            </widget>
           </item>
-
           <item>
            <widget class="QToolButton" name="addSongButton">
             <property name="sizePolicy">
@@ -602,7 +581,6 @@ QToolButton#logoutButton {
             </property>
            </widget>
           </item>
-
           <item>
            <widget class="QToolButton" name="editAlbumButton">
             <property name="enabled">
@@ -640,7 +618,6 @@ QToolButton#logoutButton {
             </property>
            </widget>
           </item>
-
           <item>
            <widget class="QToolButton" name="deleteAlbumButton">
             <property name="enabled">
@@ -681,7 +658,6 @@ QToolButton#logoutButton {
          </layout>
         </widget>
        </item>
-
        <item>
         <spacer name="rightBottomSpacer">
          <property name="orientation">
@@ -698,7 +674,6 @@ QToolButton#logoutButton {
          </property>
         </spacer>
        </item>
-
        <item>
         <widget class="QToolButton" name="logoutButton">
          <property name="sizePolicy">
@@ -738,21 +713,18 @@ QToolButton#logoutButton {
     </item>
    </layout>
   </widget>
-
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>22</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
-
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
-
  <resources/>
  <connections/>
 </ui>

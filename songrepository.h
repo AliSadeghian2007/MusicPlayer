@@ -30,6 +30,9 @@ public:
     std::vector<Song*> getByLikedSongs(int listenerId) const ;
 
 
+    bool saveToFile(const std::string &filePath) const;
+    bool loadFromFile(const std::string &filePath);
+
 };
 
 #endif // SONGREPOSITORY_H

@@ -18,6 +18,10 @@ public:
     Album* search (int id) const override;
 
     std::vector<Album*> albums(int artistId)const;
+
+    bool saveToFile(const std::string &filePath) const;
+    bool loadFromFile(const std::string &filePath);
+
 };
 
 #endif // ALBUMREPOSITORY_H
