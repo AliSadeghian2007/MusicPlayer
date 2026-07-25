@@ -56,12 +56,13 @@ bool AccountManager::registerAccount(
 
     bool success = repo.save(std::move(account));
 
-    if (success)
+    if (!success)
     {
-        repo.saveToFile("accounts.txt");
+        return false;
     }
 
-    return success;
+    return repo.saveToFile("accounts.txt");
+
 
 }
 

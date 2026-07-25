@@ -1,123 +1,153 @@
 #include "playlistrepository.h"
+#include <fstream>
+#include <sstream>
+#include <iomanip>
 
-PlaylistRepository::PlaylistRepository() : nextId(1) {}
+PlaylistRepository::PlaylistRepository() : nextId(1), filePath("playlists.txt")
+{
+    loadFromFile();
+}
 
 int PlaylistRepository::generateId()
 {
     return nextId++;
 }
 
-bool PlaylistRepository::save(std::unique_ptr<Playlist> a)
+void PlaylistRepository::saveToFile() const
 {
-    if (!a) return false;
+    std::ofstream file(filePath.c_str(), std::ios::trunc);
+    if (!file.is_open()) return;
 
-    if (a->getId() == 0)
+    for (int i = 0; i < static_cast<int>(playlistha.size()); ++i)
     {
-        a->setId(generateId());
-    }
+        Playlist* p = playlistha[i].get();
+        const std::vector<int>& songs = p->getSongIds();
 
-    for (int i = 0; i < playlistha.size(); i++)
-    {
-        if (a->getId() == playlistha[i]->getId())
+
+        file << p->getId() << " "
+             << p->getListenerId() << " "
+             << std::quoted(p->getName()) << " "
+             << songs.size();
+
+        for (int j = 0; j < static_cast<int>(songs.size()); ++j)
         {
-            return false;
+            file << " " << songs[j];
         }
+        file << "\n";
+    }
+    file.close();
+}
+
+void PlaylistRepository::loadFromFile()
+{
+    std::ifstream file(filePath.c_str());
+    if (!file.is_open()) return;
+
+    playlistha.clear();
+    int maxId = 0;
+
+    int id, listenerId, songCount;
+    std::string name;
+
+
+    while (file >> id >> listenerId >> std::quoted(name) >> songCount)
+    {
+        std::unique_ptr<Playlist> playlist(new Playlist(id, listenerId, name));
+
+        for (int i = 0; i < songCount; ++i)
+        {
+            int sId;
+            file >> sId;
+            playlist->addSong(sId);
+        }
+
+        if (id > maxId) maxId = id;
+        playlistha.push_back(std::move(playlist));
     }
 
-    playlistha.push_back(std::move(a));
+    nextId = maxId + 1;
+    file.close();
+}
+
+bool PlaylistRepository::save(std::unique_ptr<Playlist> item)
+{
+    if (!item) return false;
+
+    if (item->getId() == 0)
+    {
+        item->setId(generateId());
+    }
+
+
+    for (int i = 0; i < static_cast<int>(playlistha.size()); ++i)
+    {
+        if (playlistha[i]->getId() == item->getId()) return false;
+    }
+
+    playlistha.push_back(std::move(item));
+    saveToFile();
     return true;
 }
 
-
 bool PlaylistRepository::remove(int id)
 {
-    int size=playlistha.size();
-    for(int i=0;i<size;i++)
+    for (int i = 0; i < static_cast<int>(playlistha.size()); ++i)
     {
-        if(playlistha[i]->getId()==id)
+        if (playlistha[i]->getId() == id)
         {
-            playlistha.erase(playlistha.begin()+(i));
+            playlistha.erase(playlistha.begin() + i);
+            saveToFile();
             return true;
         }
     }
     return false;
 }
 
-
-
 Playlist* PlaylistRepository::search(int id) const
 {
-    for(int i=0;i<playlistha.size();i++)
+    for (int i = 0; i < static_cast<int>(playlistha.size()); ++i)
     {
-        if(playlistha[i]->getId()==id )
-        {
-            return playlistha[i].get();
-        }
+        if (playlistha[i]->getId() == id) return playlistha[i].get();
     }
     return nullptr;
 }
 
-
-
-bool PlaylistRepository::insertSong(int playlistId,int songId)
+bool PlaylistRepository::insertSong(int playlistId, int songId)
 {
-    for (int i=0;i<playlistha.size();i++)
+    Playlist* p = search(playlistId);
+    if (!p) return false;
+
+
+    const std::vector<int>& songs = p->getSongIds();
+    for (int i = 0; i < static_cast<int>(songs.size()); ++i)
     {
-        if (playlistha[i]->getId()==playlistId)
-        {
-            const std::vector<int>& a=playlistha[i]->getSongIds();
-            for (int j=0;j<a.size();j++)
-            {
-                if(songId==a[j])
-                {
-                    return false;
-                }
-            }
-            playlistha[i]->addSong(songId);
-            return true;
-        }
+        if (songs[i] == songId) return false;
     }
-    return false;
 
-
-
+    p->addSong(songId);
+    saveToFile();
+    return true;
 }
 
-
-bool PlaylistRepository::removeSong(int playlistId,int songId)
+bool PlaylistRepository::removeSong(int playlistId, int songId)
 {
-    for (int i=0;i<playlistha.size();i++)
-    {
-        if (playlistha[i]->getId()==playlistId)
-        {
-            const std::vector<int>& a=playlistha[i]->getSongIds();
-            for (int j=0;j<a.size();j++)
-            {
-                if(songId==a[j])
-                {
-                    playlistha[i]->removeSong(songId);
-                    return true;
-                }
-            }
-            return false;
-        }
-    }
-    return false;
+    Playlist* p = search(playlistId);
+    if (!p) return false;
 
-
+    p->removeSong(songId);
+    saveToFile();
+    return true;
 }
-
 
 std::vector<Playlist*> PlaylistRepository::playlists(int listenerId) const
 {
-    std::vector<Playlist*>result;
-    for(int i=0;i<playlistha.size();i++)
+    std::vector<Playlist*> result;
+    for (int i = 0; i < static_cast<int>(playlistha.size()); ++i)
     {
-        if(playlistha[i]->getListenerId()==listenerId)
+        if (playlistha[i]->getListenerId() == listenerId)
         {
             result.push_back(playlistha[i].get());
         }
     }
     return result;
-
 }
