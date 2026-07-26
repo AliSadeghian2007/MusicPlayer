@@ -207,6 +207,7 @@ bool SongRepository::loadFromFile(const std::string &filePath)
     std::string genre;
     int releaseYear = 0;
     std::string coverPath;
+    int maxId = 0;
 
     while (in >> id >> artistId >> albumId
            >> std::quoted(name)
@@ -219,7 +220,14 @@ bool SongRepository::loadFromFile(const std::string &filePath)
             new Song(id, artistId, albumId, name, fileName, genre, releaseYear, coverPath));
 
         songs.push_back(std::move(song));
+
+        if (id > maxId)
+        {
+            maxId = id;
+        }
     }
+
+    nextId = maxId + 1;
 
     return true;
 }

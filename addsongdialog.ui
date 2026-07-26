@@ -117,6 +117,38 @@
        </item>
       </layout>
      </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="labelCoverPreviewCaption">
+       <property name="text">
+        <string>Preview:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="labelCoverPreview">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #b0b0b0; background-color: #f0f0f0; color: #999999; font-size: 10px;</string>
+       </property>
+       <property name="text">
+        <string>No Image</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
 
     </layout>
    </item>
@@ -136,4 +168,5 @@
  <resources/>
  <connections/>
 </ui>
+
 

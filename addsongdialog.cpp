@@ -2,6 +2,7 @@
 #include "ui_addsongdialog.h"
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QPixmap>
 
 AddSongDialog::AddSongDialog(QWidget *parent) :
     QDialog(parent),
@@ -20,6 +21,8 @@ AddSongDialog::AddSongDialog(QWidget *parent) :
     disconnect(ui->buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &AddSongDialog::onAccept);
     connect(ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
+
+    updateCoverPreview(QString());
 }
 
 AddSongDialog::~AddSongDialog()
@@ -70,6 +73,7 @@ void AddSongDialog::onBrowseCoverClicked()
     if (!filePath.isEmpty())
     {
         ui->lineEditCoverPath->setText(filePath);
+        updateCoverPreview(filePath);
     }
 }
 
@@ -119,6 +123,7 @@ void AddSongDialog::setSongData(const std::string& name, const std::string& file
     ui->lineEditGenre->setText(QString::fromStdString(genre));
     ui->spinBoxYear->setValue(year);
     ui->lineEditCoverPath->setText(QString::fromStdString(coverPath));
+    updateCoverPreview(QString::fromStdString(coverPath));
 
 
     for (int i = 0; i < ui->comboBoxAlbum->count(); ++i)
@@ -131,3 +136,20 @@ void AddSongDialog::setSongData(const std::string& name, const std::string& file
     }
     this->setWindowTitle("Edit Song");
 }
+
+void AddSongDialog::updateCoverPreview(const QString &path)
+{
+    QPixmap pixmap(path);
+
+    if (pixmap.isNull())
+    {
+        ui->labelCoverPreview->setPixmap(QPixmap());
+        ui->labelCoverPreview->setText("No Image");
+        return;
+    }
+
+    ui->labelCoverPreview->setText(QString());
+    ui->labelCoverPreview->setPixmap(pixmap.scaled(
+        80, 80, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+}
+

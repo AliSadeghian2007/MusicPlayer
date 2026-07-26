@@ -6,9 +6,14 @@
 #include <QLabel>
 #include <QToolButton>
 #include <QVBoxLayout>
+#include <QDialog>
+#include <vector>
 
 class ListenerManager;
+class SharedFeaturesManager;
 class Listener;
+class Artist;
+class Album;
 class Playlist;
 class Song;
 
@@ -24,6 +29,7 @@ class ListenerWindow : public QMainWindow
 public:
     explicit ListenerWindow(ListenerManager *listenerManager,
                             Listener *listener,
+                            SharedFeaturesManager *sharedFeaturesManager = nullptr,
                             QWidget *parent = nullptr);
     ~ListenerWindow();
 
@@ -52,10 +58,25 @@ private:
     void updateActionButtons();
     QString getPlaylistDisplayName(Playlist *playlist) const;
 
+
+    std::vector<Playlist*> sortedUserPlaylists() const;
+    std::vector<Album*> sortedArtistAlbums(int artistId) const;
+    std::vector<Song*> sortedSongList(std::vector<Song*> songs) const;
+
+
+    void openPlaylistSongsDialog(int playlistId, bool isFavorites);
+
+
+    void openArtistBrowserDialog();
+    void openArtistDetailDialog(Artist *artist);
+    QWidget* buildBrowseSongRow(QWidget *parent, Song *song);
+    void showAddToPlaylistMenu(QWidget *anchor, int songId);
+
 private:
     Ui::ListenerWindow *ui;
     ListenerManager *listenerManager;
     Listener *currentListener;
+    SharedFeaturesManager *sharedFeaturesManager;
 
     int selectedPlaylistId;
     bool selectedIsFavorites;

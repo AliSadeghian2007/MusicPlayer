@@ -8,17 +8,20 @@
 #include "artistwindow.h"
 #include "listenerwindow.h"
 #include "dialog.h"
+#include "sharedfeaturesmanager.h"
 #include <QMessageBox>
 
 MainWindow::MainWindow(AccountManager *accountManager,
                        ArtistManager *artistManager,
                        ListenerManager *listenerManager,
+                       SharedFeaturesManager *sharedFeaturesManager,
                        QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , accountManager(accountManager)
     , artistManager(artistManager)
     , listenerManager(listenerManager)
+    , sharedFeaturesManager(sharedFeaturesManager)
 {
     ui->setupUi(this);
 }
@@ -56,7 +59,7 @@ void MainWindow::on_pushButton_2_clicked()
     Artist *artist = dynamic_cast<Artist *>(user);
     if (artist != nullptr)
     {
-        ArtistWindow *artistWindow = new ArtistWindow(artistManager, artist);
+        ArtistWindow *artistWindow = new ArtistWindow(artistManager, artist, sharedFeaturesManager);
         artistWindow->setAttribute(Qt::WA_DeleteOnClose);
 
         connect(artistWindow, &ArtistWindow::logoutRequested,
@@ -70,7 +73,7 @@ void MainWindow::on_pushButton_2_clicked()
     Listener *listener = dynamic_cast<Listener *>(user);
     if (listener != nullptr)
     {
-        ListenerWindow *listenerWindow = new ListenerWindow(listenerManager, listener);
+        ListenerWindow *listenerWindow = new ListenerWindow(listenerManager, listener, sharedFeaturesManager);
         listenerWindow->setAttribute(Qt::WA_DeleteOnClose);
 
         connect(listenerWindow, &ListenerWindow::logoutRequested,
@@ -113,3 +116,4 @@ void MainWindow::onListenerLogoutRequested()
 {
     this->show();
 }
+

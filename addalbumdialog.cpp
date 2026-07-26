@@ -2,6 +2,7 @@
 #include "ui_addalbumdialog.h"
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QPixmap>
 
 AddAlbumDialog::AddAlbumDialog(QWidget *parent) :
     QDialog(parent),
@@ -16,6 +17,8 @@ AddAlbumDialog::AddAlbumDialog(QWidget *parent) :
     disconnect(ui->buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &AddAlbumDialog::onAccept);
     connect(ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
+
+    updateCoverPreview(QString());
 }
 
 AddAlbumDialog::~AddAlbumDialog()
@@ -37,6 +40,7 @@ void AddAlbumDialog::onBrowseClicked()
     if (!filePath.isEmpty())
     {
         ui->lineEditCoverPath->setText(filePath);
+        updateCoverPreview(filePath);
     }
 }
 
@@ -79,5 +83,22 @@ void AddAlbumDialog::setAlbumData(const std::string& name, const std::string& co
 
     ui->lineEditName->setText(QString::fromStdString(name));
     ui->lineEditCoverPath->setText(QString::fromStdString(coverPath));
+    updateCoverPreview(QString::fromStdString(coverPath));
     this->setWindowTitle("Edit Album");
+}
+
+void AddAlbumDialog::updateCoverPreview(const QString &path)
+{
+    QPixmap pixmap(path);
+
+    if (pixmap.isNull())
+    {
+        ui->labelCoverPreview->setPixmap(QPixmap());
+        ui->labelCoverPreview->setText("No Image");
+        return;
+    }
+
+    ui->labelCoverPreview->setText(QString());
+    ui->labelCoverPreview->setPixmap(pixmap.scaled(
+        80, 80, Qt::KeepAspectRatio, Qt::SmoothTransformation));
 }

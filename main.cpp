@@ -10,6 +10,7 @@
 #include "artistrepository.h"
 #include "artistmanager.h"
 #include "listenermanager.h"
+#include "sharedfeaturesmanager.h"
 
 int main(int argc, char *argv[])
 {
@@ -39,7 +40,14 @@ int main(int argc, char *argv[])
         listenerRepository
         );
 
-    MainWindow w(&accountManager, &artistManager, &listenerManager);
+    SharedFeaturesManager sharedFeaturesManager(
+        songRepository,
+        albumRepository,
+        playlistRepository,
+        accountRepository
+        );
+
+    MainWindow w(&accountManager, &artistManager, &listenerManager, &sharedFeaturesManager);
     w.show();
 
     int result = a.exec();
@@ -51,4 +59,3 @@ int main(int argc, char *argv[])
 
     return result;
 }
-

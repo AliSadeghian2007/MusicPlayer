@@ -50,8 +50,7 @@ bool AccountRepository::save(std::unique_ptr<User> a)
     for (int i = 0; i < users.size(); i++)
     {
         if (a->getId() == users[i]->getId() ||
-            a->getUserName() == users[i]->getUserName() ||
-            a->getPassword() == users[i]->getPassword())
+            a->getUserName() == users[i]->getUserName())
         {
             return false;
         }

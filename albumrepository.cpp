@@ -116,6 +116,7 @@ bool AlbumRepository::loadFromFile(const std::string &filePath)
     int artistId = 0;
     std::string name;
     std::string coverPath;
+    int maxId = 0;
 
     while (in >> id >> artistId >> std::quoted(name) >> std::quoted(coverPath))
     {
@@ -123,7 +124,14 @@ bool AlbumRepository::loadFromFile(const std::string &filePath)
             new Album(id, artistId, name, coverPath));
 
         albumha.push_back(std::move(album));
+
+        if (id > maxId)
+        {
+            maxId = id;
+        }
     }
+
+    nextId = maxId + 1;
 
     return true;
 }

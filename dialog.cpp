@@ -52,12 +52,6 @@ void Dialog::on_submitRegisterButton_clicked()
         return;
     }
 
-    if (accountManager->passwordExists(stdPassword))
-    {
-        QMessageBox::critical(this, "Registration Error", "This password has already been selected.");
-        return;
-    }
-
     try {
 
         bool success = accountManager->registerAccount(stdUsername, stdPassword, stdFullName, stdBiography, stdRole, stdProfilePhoto);

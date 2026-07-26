@@ -29,6 +29,7 @@ public:
     std::vector<Artist*> getAllArtists() const;
     std::vector<Album*> getArtistAlbums(int artistId) const;
     std::vector<Song*> getArtistSingles(int artistId) const;
+    std::vector<Song*> getAlbumSongs(int albumId) const;
     Artist* getArtistById(int artistId) const;
 
     std::vector<Playlist*> getPlaylistsByUserId(int userId) const;

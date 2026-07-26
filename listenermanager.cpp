@@ -32,6 +32,11 @@ std::vector<Song*> ListenerManager::getArtistSingles(int artistId) const
     return songRepository.singleSongs(artistId);
 }
 
+std::vector<Song*> ListenerManager::getAlbumSongs(int albumId) const
+{
+    return songRepository.getByAlbum(albumId);
+}
+
 Artist* ListenerManager::getArtistById(int artistId) const
 {
     User* user = artistRepository.search(artistId);
@@ -218,4 +223,6 @@ std::vector<Song*> ListenerManager::getLikedSongs(int listenerId) const
 {
     return songRepository.getByLikedSongs(listenerId);
 }
+
+
 

@@ -7,6 +7,7 @@
 class AccountManager;
 class ArtistManager;
 class ListenerManager;
+class SharedFeaturesManager;
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,6 +24,7 @@ public:
     explicit MainWindow(AccountManager *accountManager,
                         ArtistManager *artistManager,
                         ListenerManager *listenerManager,
+                        SharedFeaturesManager *sharedFeaturesManager,
                         QWidget *parent = nullptr);
     ~MainWindow();
 
@@ -37,8 +39,7 @@ private:
     AccountManager *accountManager;
     ArtistManager *artistManager;
     ListenerManager *listenerManager;
+    SharedFeaturesManager *sharedFeaturesManager;
 };
 
 #endif // MAINWINDOW_H
-
-

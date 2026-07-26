@@ -39,6 +39,9 @@ private slots:
     void onAccept();
 
 private:
+
+    void updateCoverPreview(const QString &path);
+
     Ui::AddSongDialog *ui;
 };
 
