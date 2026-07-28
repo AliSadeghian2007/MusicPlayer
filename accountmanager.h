@@ -23,11 +23,11 @@ public:
 
     User* Login(std::string username, std::string password);
 
-    void editAccount(const std::string& username,
+    bool editAccount(const std::string& username,
                      const std::string& newUsername,
                      const std::string& newPassword);
 
-    void deleteAccount(const std::string& username);
+    bool deleteAccount(const std::string& username);
 
     bool usernameExists(const std::string& username) const;
     bool passwordExists(const std::string& password) const;
@@ -35,4 +35,5 @@ public:
 };
 
 #endif // ACCOUNTMANAGER_H
+
 

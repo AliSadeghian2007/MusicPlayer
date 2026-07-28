@@ -11,6 +11,7 @@
 
 class ListenerManager;
 class SharedFeaturesManager;
+class AccountManager;
 class Listener;
 class Artist;
 class Album;
@@ -30,6 +31,7 @@ public:
     explicit ListenerWindow(ListenerManager *listenerManager,
                             Listener *listener,
                             SharedFeaturesManager *sharedFeaturesManager = nullptr,
+                            AccountManager *accountManager = nullptr,
                             QWidget *parent = nullptr);
     ~ListenerWindow();
 
@@ -45,6 +47,8 @@ private slots:
     void onDeletePlaylistClicked();
     void onExploreClicked();
     void onLogoutClicked();
+    void onEditAccountClicked();
+    void onDeleteAccountClicked();
 
 private:
     void setupConnections();
@@ -77,6 +81,7 @@ private:
     ListenerManager *listenerManager;
     Listener *currentListener;
     SharedFeaturesManager *sharedFeaturesManager;
+    AccountManager *accountManager;
 
     int selectedPlaylistId;
     bool selectedIsFavorites;

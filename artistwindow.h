@@ -12,6 +12,7 @@
 
 class ArtistManager;
 class SharedFeaturesManager;
+class AccountManager;
 class Artist;
 class Album;
 class Song;
@@ -30,6 +31,7 @@ public:
     explicit ArtistWindow(ArtistManager *artistManager,
                           Artist *artist,
                           SharedFeaturesManager *sharedFeaturesManager = nullptr,
+                          AccountManager *accountManager = nullptr,
                           QWidget *parent = nullptr);
     ~ArtistWindow();
 
@@ -42,6 +44,8 @@ private slots:
     void onEditClicked();
     void onDeleteClicked();
     void onLogoutClicked();
+    void onEditAccountClicked();
+    void onDeleteAccountClicked();
 
 private:
     void setupConnections();
@@ -71,6 +75,7 @@ private:
     ArtistManager *artistManager;
     Artist *artist;
     SharedFeaturesManager *sharedFeaturesManager;
+    AccountManager *accountManager;
 
     QWidget *albumsContainer;
     QVBoxLayout *albumsLayout;

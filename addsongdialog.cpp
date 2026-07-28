@@ -152,4 +152,3 @@ void AddSongDialog::updateCoverPreview(const QString &path)
     ui->labelCoverPreview->setPixmap(pixmap.scaled(
         80, 80, Qt::KeepAspectRatio, Qt::SmoothTransformation));
 }
-

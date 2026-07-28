@@ -4,6 +4,7 @@
 
 #include "listenermanager.h"
 #include "sharedfeaturesmanager.h"
+#include "accountmanager.h"
 #include "listener.h"
 #include "artist.h"
 #include "album.h"
@@ -24,6 +25,7 @@
 #include <QScrollArea>
 #include <QMenu>
 #include <QDialogButtonBox>
+#include <QFormLayout>
 #include <QPoint>
 #include <QPixmap>
 #include <QIcon>
@@ -38,12 +40,14 @@
 ListenerWindow::ListenerWindow(ListenerManager* listenerManager,
                                Listener* listener,
                                SharedFeaturesManager* sharedFeaturesManager,
+                               AccountManager* accountManager,
                                QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::ListenerWindow)
     , listenerManager(listenerManager)
     , currentListener(listener)
     , sharedFeaturesManager(sharedFeaturesManager)
+    , accountManager(accountManager)
     , selectedPlaylistId(-1)
     , selectedIsFavorites(false)
 {
@@ -96,6 +100,30 @@ void ListenerWindow::setupConnections()
 
     connect(ui->logoutButton, &QToolButton::clicked,
             this, &ListenerWindow::onLogoutClicked);
+
+    // Built at runtime and inserted into the existing bottom bar so
+    // no further .ui changes are required.
+    QPushButton *editAccountButton = new QPushButton("Edit Account", ui->centralwidget);
+    editAccountButton->setCursor(Qt::PointingHandCursor);
+    editAccountButton->setStyleSheet(
+        "padding: 6px 12px; background-color: #ffffff; color: #242424; "
+        "border: 1px solid #aaaaaa; border-radius: 6px; font-size: 12px;");
+
+    QPushButton *deleteAccountButton = new QPushButton("Delete Account", ui->centralwidget);
+    deleteAccountButton->setCursor(Qt::PointingHandCursor);
+    deleteAccountButton->setStyleSheet(
+        "padding: 6px 12px; background-color: #fff0f0; color: #c0392b; "
+        "border: 1px solid #c0392b; border-radius: 6px; font-size: 12px;");
+
+    int logoutIndex = ui->bottomBarLayout->indexOf(ui->logoutButton);
+    ui->bottomBarLayout->insertWidget(logoutIndex, editAccountButton);
+    ui->bottomBarLayout->insertWidget(logoutIndex + 1, deleteAccountButton);
+
+    connect(editAccountButton, &QAbstractButton::clicked,
+            this, &ListenerWindow::onEditAccountClicked);
+
+    connect(deleteAccountButton, &QAbstractButton::clicked,
+            this, &ListenerWindow::onDeleteAccountClicked);
 }
 
 
@@ -1002,6 +1030,13 @@ void ListenerWindow::openArtistDetailDialog(Artist *artist)
         "  background-color: #ffffff;"
         "  color: #242424;"
         "  font-size: 12px;"
+        "}"
+        "QComboBox QAbstractItemView {"
+        "  background-color: #ffffff;"
+        "  color: #242424;"
+        "  selection-background-color: #eaf3e0;"
+        "  selection-color: #1f3d0c;"
+        "  outline: none;"
         "}");
 
     songsFilterLayout->addWidget(songSearchEdit, 1);
@@ -1196,6 +1231,96 @@ void ListenerWindow::openArtistDetailDialog(Artist *artist)
 
 void ListenerWindow::onLogoutClicked()
 {
+    emit logoutRequested();
+    this->close();
+}
+
+void ListenerWindow::onEditAccountClicked()
+{
+    if (accountManager == nullptr || currentListener == nullptr)
+    {
+        QMessageBox::critical(this, "Error", "Account manager is not available.");
+        return;
+    }
+
+    QDialog dialog(this);
+    dialog.setWindowTitle("Edit Account");
+
+    QFormLayout *formLayout = new QFormLayout(&dialog);
+
+    QLineEdit *usernameEdit = new QLineEdit(QString::fromStdString(currentListener->getUserName()), &dialog);
+    QLineEdit *passwordEdit = new QLineEdit(&dialog);
+    passwordEdit->setEchoMode(QLineEdit::Password);
+    passwordEdit->setPlaceholderText("Leave blank to keep current password");
+
+    formLayout->addRow("Username:", usernameEdit);
+    formLayout->addRow("New Password:", passwordEdit);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(
+        QDialogButtonBox::Ok | QDialogButtonBox::Cancel, &dialog);
+    formLayout->addRow(buttonBox);
+
+    connect(buttonBox, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
+
+    if (dialog.exec() != QDialog::Accepted)
+    {
+        return;
+    }
+
+    QString newUsername = usernameEdit->text().trimmed();
+
+    if (newUsername.isEmpty())
+    {
+        QMessageBox::warning(this, "Edit Account", "Username cannot be empty.");
+        return;
+    }
+
+    std::string newPassword = passwordEdit->text().isEmpty()
+                                  ? currentListener->getPassword()
+                                  : passwordEdit->text().toStdString();
+
+    bool success = accountManager->editAccount(
+        currentListener->getUserName(), newUsername.toStdString(), newPassword);
+
+    if (!success)
+    {
+        QMessageBox::warning(this, "Edit Account",
+                             "Could not update the account. That username may already be taken.");
+        return;
+    }
+
+    QMessageBox::information(this, "Edit Account", "Account updated successfully.");
+}
+
+void ListenerWindow::onDeleteAccountClicked()
+{
+    if (accountManager == nullptr || currentListener == nullptr)
+    {
+        QMessageBox::critical(this, "Error", "Account manager is not available.");
+        return;
+    }
+
+    QMessageBox::StandardButton confirm = QMessageBox::question(
+        this, "Delete Account",
+        "Are you sure you want to permanently delete your account? This cannot be undone.",
+        QMessageBox::Yes | QMessageBox::No);
+
+    if (confirm != QMessageBox::Yes)
+    {
+        return;
+    }
+
+    bool success = accountManager->deleteAccount(currentListener->getUserName());
+
+    if (!success)
+    {
+        QMessageBox::warning(this, "Delete Account", "Could not delete the account.");
+        return;
+    }
+
+    QMessageBox::information(this, "Delete Account", "Your account has been deleted.");
+
     emit logoutRequested();
     this->close();
 }

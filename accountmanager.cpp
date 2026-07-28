@@ -83,7 +83,7 @@ User* AccountManager::Login(std::string username, std::string password)
     return nullptr;
 }
 
-void AccountManager::editAccount(
+bool AccountManager::editAccount(
     const std::string& username,
     const std::string& newUsername,
     const std::string& newPassword)
@@ -92,23 +92,44 @@ void AccountManager::editAccount(
 
     if (user == nullptr)
     {
-        return;
+        return false;
+    }
+
+    // Only reject the rename if some *other* account already owns
+    // that username; renaming to the same username is a no-op here.
+    if (newUsername != username)
+    {
+        User* existing = repo.searchByUserName(newUsername);
+
+        if (existing != nullptr && existing != user)
+        {
+            return false;
+        }
     }
 
     user->setUserName(newUsername);
     user->setPassword(newPassword);
+
+    return repo.saveToFile("accounts.txt");
 }
 
-void AccountManager::deleteAccount(const std::string& username)
+bool AccountManager::deleteAccount(const std::string& username)
 {
     User* user = repo.searchByUserName(username);
 
     if (user == nullptr)
     {
-        return;
+        return false;
     }
 
-    repo.remove(user->getId());
+    bool removed = repo.remove(user->getId());
+
+    if (!removed)
+    {
+        return false;
+    }
+
+    return repo.saveToFile("accounts.txt");
 }
 
 

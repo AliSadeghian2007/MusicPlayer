@@ -46,4 +46,3 @@ private:
 };
 
 #endif // ADDSONGDIALOG_H
-

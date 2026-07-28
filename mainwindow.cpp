@@ -1,3 +1,4 @@
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "accountmanager.h"
@@ -59,7 +60,7 @@ void MainWindow::on_pushButton_2_clicked()
     Artist *artist = dynamic_cast<Artist *>(user);
     if (artist != nullptr)
     {
-        ArtistWindow *artistWindow = new ArtistWindow(artistManager, artist, sharedFeaturesManager);
+        ArtistWindow *artistWindow = new ArtistWindow(artistManager, artist, sharedFeaturesManager, accountManager);
         artistWindow->setAttribute(Qt::WA_DeleteOnClose);
 
         connect(artistWindow, &ArtistWindow::logoutRequested,
@@ -73,7 +74,7 @@ void MainWindow::on_pushButton_2_clicked()
     Listener *listener = dynamic_cast<Listener *>(user);
     if (listener != nullptr)
     {
-        ListenerWindow *listenerWindow = new ListenerWindow(listenerManager, listener, sharedFeaturesManager);
+        ListenerWindow *listenerWindow = new ListenerWindow(listenerManager, listener, sharedFeaturesManager, accountManager);
         listenerWindow->setAttribute(Qt::WA_DeleteOnClose);
 
         connect(listenerWindow, &ListenerWindow::logoutRequested,
